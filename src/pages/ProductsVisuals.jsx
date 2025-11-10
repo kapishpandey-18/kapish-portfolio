@@ -2,7 +2,7 @@ import { useState } from 'react'
 import PropTypes from 'prop-types'
 import { productVisuals } from '../data/productVisuals'
 
-function ImagesGrid({ list }) {
+function ImagesGrid({ list, slug }) {
   return (
     <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {list.map((img, i) => (
@@ -13,6 +13,11 @@ function ImagesGrid({ list }) {
             className="w-full h-full object-cover" 
             style={{ aspectRatio: img.aspectRatio }}
             loading="lazy"
+            onError={(e) => {
+              // replace broken image with a seeded placeholder from picsum
+              e.currentTarget.onerror = null
+              e.currentTarget.src = `https://picsum.photos/seed/${slug}-${i}/800/450`
+            }}
           />
           <figcaption className="sr-only">{img.alt}</figcaption>
         </figure>
@@ -29,6 +34,7 @@ ImagesGrid.propTypes = {
       aspectRatio: PropTypes.string.isRequired,
     })
   ).isRequired,
+  slug: PropTypes.string.isRequired,
 }
 
 function Category({ item }) {
@@ -56,7 +62,7 @@ function Category({ item }) {
         </div>
       </div>
       <p className="mt-2 text-neutral-300">{item.description}</p>
-      <ImagesGrid list={item.images[tab]} />
+      <ImagesGrid list={item.images[tab]} slug={item.slug} />
     </section>
   )
 }
@@ -64,6 +70,7 @@ function Category({ item }) {
 Category.propTypes = {
   item: PropTypes.shape({
     category: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     images: PropTypes.shape({
       mobile: PropTypes.array.isRequired,
