@@ -1,25 +1,7 @@
 import { profile } from '../data/profile'
 import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-import ProfileUploader from './ProfileUploader'
 
 export default function Hero() {
-  const [profileSrc, setProfileSrc] = useState('/assets/profile.svg')
-  const [showUploader, setShowUploader] = useState(false)
-
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem('kapish_profile_image')
-      if (stored) setProfileSrc(stored)
-    } catch (err) {
-      // Ignore localStorage errors (e.g., private mode)
-    }
-  }, [])
-
-  const handleUpload = (dataUrl) => {
-    setProfileSrc(dataUrl || '/assets/profile.svg')
-  }
-
   return (
     <section id="home" className="mx-auto max-w-6xl px-4 pt-20 pb-16">
       <div className="flex flex-col md:flex-row items-center gap-12">
@@ -28,21 +10,10 @@ export default function Hero() {
           <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-600 to-cyan-500 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition duration-500"></div>
           <div className="relative">
             <img 
-              src={profileSrc} 
+              src="/assets/profile.svg" 
               alt={profile.name}
               className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-blue-500/20"
             />
-
-            {/* Edit button - opens uploader (client-side localStorage) */}
-            <button
-              aria-label="Edit profile image"
-              onClick={() => setShowUploader(true)}
-              className="absolute right-0 bottom-0 -mr-2 -mb-2 bg-slate-800 border border-neutral-700 p-2 rounded-full text-sm text-neutral-200 hover:bg-slate-700"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536M9 11l6 6L21 11l-6-6-6 6z" />
-              </svg>
-            </button>
           </div>
         </div>
 
@@ -110,13 +81,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {showUploader && (
-        <ProfileUploader
-          onUpload={(dataUrl) => handleUpload(dataUrl)}
-          onClose={() => setShowUploader(false)}
-        />
-      )}
     </section>
   )
 }

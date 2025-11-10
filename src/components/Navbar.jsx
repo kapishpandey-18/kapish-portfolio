@@ -6,8 +6,15 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-neutral-800/50 shadow-lg">
-      <nav className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-        <Link to="/" className="font-semibold tracking-wide text-blue-500 text-xl">KP</Link>
+      <nav className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between md:justify-center">
+        <Link to="/" className="flex items-center gap-3 group">
+          <img 
+            src="/assets/profile.svg" 
+            alt="Kapish Pandey" 
+            className="w-10 h-10 rounded-full border-2 border-blue-500/50 group-hover:border-blue-400 transition-colors"
+          />
+          <span className="hidden sm:block font-semibold tracking-wide text-blue-500 group-hover:text-blue-400 transition-colors">Kapish Pandey</span>
+        </Link>
         
         {/* Mobile menu button */}
         <button 

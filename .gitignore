@@ -28,6 +28,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Personal files (optional - if you want to keep resume private)
-# *.docx
-# *.pdf
+# Personal files - keep resume private
+*.docx
+public/resume.pdf
