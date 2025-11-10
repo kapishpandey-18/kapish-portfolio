@@ -5,6 +5,7 @@ export default function Services() {
     { title: "SDK Development", details: "Class-based SDKs, custom headers/auth, error callbacks, multi-env config.", icon: "📦" },
     { title: "Product Design (Figma)", details: "Wireframes, design systems, clickable prototypes, developer handoff.", icon: "🎨" },
     { title: "Automation & AI", details: "Content pipelines, Instagram/WhatsApp posting, Google Drive workflows.", icon: "🤖" },
+    { title: "System Design", details: "Scalable architectures, database schema design, API contracts, microservices.", icon: "🏗️" },
   ]
   return (
     <section id="services" className="mx-auto max-w-6xl px-4 py-16">
