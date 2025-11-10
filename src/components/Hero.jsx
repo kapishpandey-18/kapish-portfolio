@@ -1,0 +1,122 @@
+import { profile } from '../data/profile'
+import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import ProfileUploader from './ProfileUploader'
+
+export default function Hero() {
+  const [profileSrc, setProfileSrc] = useState('/assets/profile.svg')
+  const [showUploader, setShowUploader] = useState(false)
+
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem('kapish_profile_image')
+      if (stored) setProfileSrc(stored)
+    } catch (err) {
+      // Ignore localStorage errors (e.g., private mode)
+    }
+  }, [])
+
+  const handleUpload = (dataUrl) => {
+    setProfileSrc(dataUrl || '/assets/profile.svg')
+  }
+
+  return (
+    <section id="home" className="mx-auto max-w-6xl px-4 pt-20 pb-16">
+      <div className="flex flex-col md:flex-row items-center gap-12">
+        {/* Profile Image */}
+        <div className="relative group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-600 to-cyan-500 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition duration-500"></div>
+          <div className="relative">
+            <img 
+              src={profileSrc} 
+              alt={profile.name}
+              className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-blue-500/20"
+            />
+
+            {/* Edit button - opens uploader (client-side localStorage) */}
+            <button
+              aria-label="Edit profile image"
+              onClick={() => setShowUploader(true)}
+              className="absolute right-0 bottom-0 -mr-2 -mb-2 bg-slate-800 border border-neutral-700 p-2 rounded-full text-sm text-neutral-200 hover:bg-slate-700"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536M9 11l6 6L21 11l-6-6-6 6z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/* Content */}
+        <div className="flex-1 text-center md:text-left">
+          <div className="inline-block mb-4">
+            <span className="px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/30 text-cyan-400 text-sm font-medium">
+              Available for Freelance
+            </span>
+          </div>
+          
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight bg-gradient-to-r from-white via-neutral-100 to-neutral-300 bg-clip-text text-transparent">
+            {profile.name}
+          </h1>
+          
+          <p className="mt-3 text-xl md:text-2xl text-blue-500 font-medium">{profile.title}</p>
+          
+          <p className="mt-4 max-w-2xl text-neutral-400 leading-relaxed">{profile.summary}</p>
+
+          {/* Skills */}
+          <div className="mt-6 flex flex-wrap gap-2 justify-center md:justify-start">
+            {profile.skills.map((s) => (
+              <span 
+                key={s} 
+                className="px-4 py-2 rounded-lg bg-gradient-to-br from-blue-500/5 to-purple-600/5 border border-blue-500/20 text-sm text-neutral-200 hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300"
+              >
+                {s}
+              </span>
+            ))}
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
+            <Link 
+              to="/#projects" 
+              className="group relative px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium overflow-hidden transition-all duration-300 hover:scale-105"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                View Projects
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
+            </Link>
+            
+            <Link 
+              to="/#contact" 
+              className="px-6 py-3 rounded-lg border-2 border-cyan-400/50 text-cyan-400 font-medium hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300 hover:scale-105"
+            >
+              Get in Touch
+            </Link>
+            
+            <a 
+              href="/resume.pdf" 
+              download 
+              className="px-6 py-3 rounded-lg border border-neutral-700 text-neutral-300 font-medium hover:border-purple-600 hover:text-purple-600 hover:bg-purple-600/5 transition-all duration-300"
+            >
+              <span className="flex items-center gap-2">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Resume
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {showUploader && (
+        <ProfileUploader
+          onUpload={(dataUrl) => handleUpload(dataUrl)}
+          onClose={() => setShowUploader(false)}
+        />
+      )}
+    </section>
+  )
+}
