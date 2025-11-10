@@ -10,7 +10,7 @@ export default function Hero() {
           <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-600 to-cyan-500 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition duration-500"></div>
           <div className="relative">
             <img 
-              src="/assets/profile.svg" 
+              src="/myworld.jpg" 
               alt={profile.name}
               className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-blue-500/20"
             />
