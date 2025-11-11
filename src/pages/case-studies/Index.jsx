@@ -6,7 +6,7 @@ export default function CaseStudiesIndex() {
     { title: "CleanMyCar — On-demand Car Cleaning", to: "/case-studies/cleanmycar", blurb: "Owner & cleaner flows, GPS, subscriptions, daily proof of cleaning." },
   ]
   return (
-    <section className="mx-auto max-w-6xl px-4 py-12">
+    <section className="mx-auto max-w-6xl px-4 py-12 min-h-screen">
       <h1 className="text-2xl md:text-3xl font-semibold">Case Studies</h1>
       <p className="mt-2 text-neutral-400 max-w-3xl">Deep dives into scope, architecture, decisions, and outcomes.</p>
       <div className="mt-6 grid md:grid-cols-2 gap-6">

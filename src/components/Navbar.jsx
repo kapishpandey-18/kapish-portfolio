@@ -1,18 +1,55 @@
 import { Link, useLocation } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState('')
   const location = useLocation()
+
+  useEffect(() => {
+    // Detect active section on scroll (only on home page)
+    if (location.pathname !== '/') {
+      setActiveSection('')
+      return
+    }
+
+    const handleScroll = () => {
+      const sections = ['home', 'about', 'projects', 'services', 'contact']
+      const scrollPosition = window.scrollY + 100 // offset for navbar height
+
+      for (const section of sections) {
+        const element = document.getElementById(section)
+        if (element) {
+          const { offsetTop, offsetHeight } = element
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section)
+            break
+          }
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    handleScroll() // Check on mount
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [location.pathname])
 
   const isActive = (to) => {
     if (!to) return false
-    // anchor links like '/#projects'
-    if (to.includes('#')) {
-      const [, hash] = to.split('#')
-      return location.pathname === '/' && location.hash === `#${hash}`
+    
+    // Home route - only active when at top of page (home section visible)
+    if (to === '/') {
+      return location.pathname === '/' && !location.hash && activeSection === 'home'
     }
-    return location.pathname === to
+    
+    // For route pages like /case-studies
+    if (!to.includes('#')) {
+      return location.pathname === to
+    }
+    
+    // For hash anchors like /#projects
+    const [, hash] = to.split('#')
+    return location.pathname === '/' && (location.hash === `#${hash}` || activeSection === hash)
   }
 
   return (
@@ -32,6 +69,7 @@ export default function Navbar() {
         {/* Desktop menu */}
         <div className="hidden md:flex gap-6 text-sm">
           {[
+            { to: '/', label: 'Home' },
             { to: '/#about', label: 'About' },
             { to: '/#projects', label: 'Projects' },
             { to: '/#services', label: 'Services' },
@@ -44,7 +82,7 @@ export default function Navbar() {
               key={link.to}
               to={link.to}
               className={
-                'transition-colors px-2 py-1 rounded ' +
+                'transition-all duration-300 px-2 py-1 rounded ' +
                 (isActive(link.to)
                   ? 'text-white border-b-2 border-blue-500'
                   : 'text-neutral-300 hover:text-blue-500')
@@ -60,6 +98,7 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden border-t border-neutral-800/50 bg-slate-900/95 backdrop-blur-md">
           <div className="px-4 py-3 flex flex-col gap-3 text-sm">
+            <Link to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-blue-500 transition-colors py-2">Home</Link>
             <Link to="/#about" onClick={() => setIsMenuOpen(false)} className="hover:text-blue-500 transition-colors py-2">About</Link>
             <Link to="/#projects" onClick={() => setIsMenuOpen(false)} className="hover:text-blue-500 transition-colors py-2">Projects</Link>
             <Link to="/#services" onClick={() => setIsMenuOpen(false)} className="hover:text-blue-500 transition-colors py-2">Services</Link>

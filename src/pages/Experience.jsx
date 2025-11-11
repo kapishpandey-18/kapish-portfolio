@@ -1,6 +1,6 @@
 export default function ExperiencePage() {
   return (
-    <article className="mx-auto max-w-3xl px-4 py-12">
+    <article className="mx-auto max-w-3xl px-4 py-12 min-h-screen">
       <h1 className="text-3xl font-semibold">Professional Experience</h1>
 
       <section className="mt-6">

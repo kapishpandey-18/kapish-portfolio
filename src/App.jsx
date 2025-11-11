@@ -27,6 +27,9 @@ function Home() {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' })
       }
+    } else {
+      // Default to top (Home section) when landing on home page
+      window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }, [location])
   
@@ -46,9 +49,9 @@ function Home() {
 export default function App() {
   return (
     <ErrorBoundary>
-      <div>
+      <div className="min-h-screen flex flex-col">
         <Navbar />
-        <main>
+        <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/case-studies" element={<CaseStudiesIndex />} />
