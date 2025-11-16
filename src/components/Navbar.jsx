@@ -46,9 +46,7 @@ export default function Navbar() {
 
     // Home route - only active when at top of page (home section visible)
     if (to === "/") {
-      return (
-        location.pathname === "/" && !location.hash && activeSection === "home"
-      );
+      return location.pathname === "/" && !location.hash && activeSection === "home";
     }
 
     // For route pages like /case-studies
@@ -62,10 +60,7 @@ export default function Navbar() {
 
     // For hash anchors like /#projects
     const [, hash] = to.split("#");
-    return (
-      location.pathname === "/" &&
-      (location.hash === `#${hash}` || activeSection === hash)
-    );
+    return location.pathname === "/" && (location.hash === `#${hash}` || activeSection === hash);
   };
 
   return (

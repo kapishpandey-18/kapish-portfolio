@@ -1,6 +1,7 @@
-import PropTypes from 'prop-types'
+import { memo } from "react";
+import PropTypes from "prop-types";
 
-export default function ProjectCard({ p }) {
+const ProjectCard = memo(function ProjectCard({ p }) {
   return (
     <div className="card-overlay rounded-xl overflow-hidden">
       {p.image && (
@@ -15,23 +16,45 @@ export default function ProjectCard({ p }) {
         </div>
         <p className="mt-2 text-neutral-300">{p.description}</p>
         <div className="mt-3 flex flex-wrap gap-2">
-          {p.stack.map(s => (
-            <span key={s} className="text-xs border border-neutral-700 rounded px-2 py-1">{s}</span>
+          {p.stack.map((s) => (
+            <span key={s} className="text-xs border border-neutral-700 rounded px-2 py-1">
+              {s}
+            </span>
           ))}
         </div>
         {p.highlights?.length > 0 && (
           <ul className="mt-3 list-disc list-inside text-sm text-neutral-400 space-y-1">
-            {p.highlights.map((h, i) => (<li key={i}>{h}</li>))}
+            {p.highlights.map((h, i) => (
+              <li key={i}>{h}</li>
+            ))}
           </ul>
         )}
         <div className="mt-4 flex gap-3">
-          {p.repo && <a className="text-sm underline underline-offset-4 hover:text-blue-500" href={p.repo} target="_blank" rel="noreferrer">Code</a>}
-          {p.live && <a className="text-sm underline underline-offset-4 hover:text-cyan-400" href={p.live} target="_blank" rel="noreferrer">Live</a>}
+          {p.repo && (
+            <a
+              className="text-sm underline underline-offset-4 hover:text-blue-500"
+              href={p.repo}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Code
+            </a>
+          )}
+          {p.live && (
+            <a
+              className="text-sm underline underline-offset-4 hover:text-cyan-400"
+              href={p.live}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live
+            </a>
+          )}
         </div>
       </div>
     </div>
-  )
-}
+  );
+});
 
 ProjectCard.propTypes = {
   p: PropTypes.shape({
@@ -44,4 +67,6 @@ ProjectCard.propTypes = {
     repo: PropTypes.string,
     live: PropTypes.string,
   }).isRequired,
-}
+};
+
+export default ProjectCard;

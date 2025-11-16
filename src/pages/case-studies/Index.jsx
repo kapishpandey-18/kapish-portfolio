@@ -25,8 +25,7 @@ export default function CaseStudiesIndex() {
     <section className="mx-auto max-w-6xl px-4 py-12 min-h-screen">
       <h1 className="text-2xl md:text-3xl font-semibold">Case Studies</h1>
       <p className="mt-2 text-neutral-400 max-w-3xl">
-        Deep dives into product challenges, architecture, solutions, and
-        outcomes.
+        Deep dives into product challenges, architecture, solutions, and outcomes.
       </p>
       <div className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {cards.map((c) => (

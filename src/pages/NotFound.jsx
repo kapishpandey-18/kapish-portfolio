@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export default function NotFound() {
   return (
@@ -9,19 +9,19 @@ export default function NotFound() {
         Sorry, the page you're looking for doesn't exist or has been moved.
       </p>
       <div className="mt-8 flex gap-4">
-        <Link 
-          to="/" 
+        <Link
+          to="/"
           className="rounded-md bg-blue-500 px-6 py-3 text-white font-medium hover:bg-blue-500/90 transition-colors"
         >
           Go Home
         </Link>
-        <Link 
-          to="/case-studies" 
+        <Link
+          to="/case-studies"
           className="rounded-md border border-neutral-700 px-6 py-3 hover:border-blue-500 hover:text-blue-500 transition-colors"
         >
           View Case Studies
         </Link>
       </div>
     </section>
-  )
+  );
 }

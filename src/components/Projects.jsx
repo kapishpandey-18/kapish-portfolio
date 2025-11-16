@@ -1,5 +1,5 @@
-import { projects } from '../data/projects'
-import ProjectCard from './ProjectCard'
+import { projects } from "../data/projects";
+import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
@@ -13,8 +13,10 @@ export default function Projects() {
         </p>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((p) => <ProjectCard key={p.title} p={p} />)}
+        {projects.map((p) => (
+          <ProjectCard key={p.title} p={p} />
+        ))}
       </div>
     </section>
-  )
+  );
 }

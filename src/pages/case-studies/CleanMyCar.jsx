@@ -27,8 +27,8 @@ export default function CSCleanMyCar() {
         <div>
           <h2 className="text-2xl font-semibold text-cyan-400 mb-4">Goal</h2>
           <p className="text-neutral-300 leading-relaxed mb-4">
-            To create a transparent and reliable subscription platform for both
-            car owners and car cleaners by:
+            To create a transparent and reliable subscription platform for both car owners and car
+            cleaners by:
           </p>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>Digitizing daily cleaning tracking</li>
@@ -63,9 +63,7 @@ export default function CSCleanMyCar() {
       title: "Solution",
       content: (
         <div>
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
-            Solution / Features
-          </h2>
+          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">Solution / Features</h2>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>Login with mobile number & OTP</li>
             <li>Subscription model with Mini / Sedan / SUV pricing</li>
@@ -84,16 +82,12 @@ export default function CSCleanMyCar() {
       title: "Tech Stack",
       content: (
         <div>
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
-            Tech Stack
-          </h2>
+          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">Tech Stack</h2>
           <div className="overflow-x-auto">
             <table className="min-w-full border border-neutral-700 rounded-lg">
               <thead className="bg-neutral-800">
                 <tr>
-                  <th className="px-6 py-3 text-left text-sm font-semibold text-cyan-400">
-                    Layer
-                  </th>
+                  <th className="px-6 py-3 text-left text-sm font-semibold text-cyan-400">Layer</th>
                   <th className="px-6 py-3 text-left text-sm font-semibold text-cyan-400">
                     Technology
                   </th>
@@ -102,15 +96,11 @@ export default function CSCleanMyCar() {
               <tbody className="divide-y divide-neutral-700">
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Frontend</td>
-                  <td className="px-6 py-3 text-neutral-300">
-                    React.js, Tailwind CSS
-                  </td>
+                  <td className="px-6 py-3 text-neutral-300">React.js, Tailwind CSS</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Backend</td>
-                  <td className="px-6 py-3 text-neutral-300">
-                    Node.js, Express.js
-                  </td>
+                  <td className="px-6 py-3 text-neutral-300">Node.js, Express.js</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Database</td>
@@ -122,9 +112,7 @@ export default function CSCleanMyCar() {
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Payments</td>
-                  <td className="px-6 py-3 text-neutral-300">
-                    Razorpay Subscriptions
-                  </td>
+                  <td className="px-6 py-3 text-neutral-300">Razorpay Subscriptions</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Notifications</td>
@@ -132,15 +120,11 @@ export default function CSCleanMyCar() {
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Mobile App</td>
-                  <td className="px-6 py-3 text-neutral-300">
-                    Capacitor (Web → Android/iOS)
-                  </td>
+                  <td className="px-6 py-3 text-neutral-300">Capacitor (Web → Android/iOS)</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Deployment</td>
-                  <td className="px-6 py-3 text-neutral-300">
-                    Vercel / AWS / Railway
-                  </td>
+                  <td className="px-6 py-3 text-neutral-300">Vercel / AWS / Railway</td>
                 </tr>
               </tbody>
             </table>
@@ -152,18 +136,13 @@ export default function CSCleanMyCar() {
       title: "Outcomes",
       content: (
         <div>
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
-            Outcomes
-          </h2>
+          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">Outcomes</h2>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>Cleaner earnings become trackable and fair</li>
             <li>Customers receive transparent service quality</li>
             <li>Reduces customer complaints by maintaining history</li>
             <li>Improves customer retention with subscription automation</li>
-            <li>
-              Enables scaling across multiple societies without manual
-              coordination
-            </li>
+            <li>Enables scaling across multiple societies without manual coordination</li>
           </ul>
         </div>
       ),
@@ -172,15 +151,11 @@ export default function CSCleanMyCar() {
       title: "Challenges",
       content: (
         <div>
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
-            Challenges
-          </h2>
+          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">Challenges</h2>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>Designing low-network image upload reliability</li>
             <li>Handling 6 AM–9 AM peak cleaning time concurrency</li>
-            <li>
-              Tracking cleaning partners across multiple housing societies
-            </li>
+            <li>Tracking cleaning partners across multiple housing societies</li>
             <li>Ensuring service time + car location + proof sync is smooth</li>
           </ul>
         </div>
@@ -190,18 +165,12 @@ export default function CSCleanMyCar() {
       title: "Learnings",
       content: (
         <div>
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
-            Learnings
-          </h2>
+          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">Learnings</h2>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>Operational flow is more complex than technical flow</li>
-            <li>
-              Reliability matters more than fancy UI in daily cleaning apps
-            </li>
+            <li>Reliability matters more than fancy UI in daily cleaning apps</li>
             <li>Push notifications dramatically reduce customer churn</li>
-            <li>
-              Payment recovery should be automated to avoid manual follow-ups
-            </li>
+            <li>Payment recovery should be automated to avoid manual follow-ups</li>
           </ul>
         </div>
       ),
@@ -210,9 +179,7 @@ export default function CSCleanMyCar() {
       title: "Future Roadmap",
       content: (
         <div>
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
-            Future Roadmap
-          </h2>
+          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">Future Roadmap</h2>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>GPS-based cleaner tracking (optional mode)</li>
             <li>WhatsApp Business bot for subscription management</li>
@@ -229,10 +196,9 @@ export default function CSCleanMyCar() {
         <div className="p-6 bg-gradient-to-r from-cyan-900/20 to-blue-900/20 rounded-xl border border-cyan-500/30">
           <h2 className="text-xl font-semibold text-cyan-300 mb-4">Summary</h2>
           <p className="text-neutral-300 leading-relaxed">
-            CleanMyCar introduces transparency and automation in daily car
-            cleaning through subscription billing, image proof, partner
-            performance tracking, and mobile-first workflow for both customers
-            and cleaners.
+            CleanMyCar introduces transparency and automation in daily car cleaning through
+            subscription billing, image proof, partner performance tracking, and mobile-first
+            workflow for both customers and cleaners.
           </p>
         </div>
       ),

@@ -68,9 +68,7 @@ function CaseStudyLayout({ title, subtitle, sections, gradientColors }) {
 
           {/* Right Navigation Arrow */}
           <button
-            onClick={() =>
-              setActiveTab(Math.min(sections.length - 1, activeTab + 1))
-            }
+            onClick={() => setActiveTab(Math.min(sections.length - 1, activeTab + 1))}
             disabled={activeTab === sections.length - 1}
             className="flex-shrink-0 p-2 bg-neutral-700/50 text-neutral-400 hover:text-white hover:bg-neutral-600 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
             style={{ borderRadius: "1.75rem" }}
@@ -107,9 +105,7 @@ function CaseStudyLayout({ title, subtitle, sections, gradientColors }) {
         </span>
 
         <button
-          onClick={() =>
-            setActiveTab(Math.min(sections.length - 1, activeTab + 1))
-          }
+          onClick={() => setActiveTab(Math.min(sections.length - 1, activeTab + 1))}
           disabled={activeTab === sections.length - 1}
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-neutral-800 text-neutral-300 hover:bg-neutral-700 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 transition-all shadow-md"
         >

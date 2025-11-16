@@ -6,8 +6,7 @@ export default function ExperiencePage() {
           Professional Experience
         </h1>
         <p className="mt-3 text-neutral-400 text-lg">
-          7+ years of building scalable SDKs, full-stack applications, and
-          mobile-first products
+          7+ years of building scalable SDKs, full-stack applications, and mobile-first products
         </p>
       </div>
 
@@ -15,9 +14,7 @@ export default function ExperiencePage() {
       <section className="mb-10 card-overlay rounded-xl p-6 md:p-8">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
           <div>
-            <h2 className="text-2xl font-semibold text-blue-400">
-              Senior Software Engineer
-            </h2>
+            <h2 className="text-2xl font-semibold text-blue-400">Senior Software Engineer</h2>
             <p className="text-lg text-cyan-400 font-medium mt-1">
               Quest Global (Client: Jio Platforms Ltd)
             </p>
@@ -30,55 +27,40 @@ export default function ExperiencePage() {
 
         <div className="space-y-6">
           <div>
-            <h3 className="text-lg font-semibold text-purple-400 mb-3">
-              JioAds SDK Platform
-            </h3>
+            <h3 className="text-lg font-semibold text-purple-400 mb-3">JioAds SDK Platform</h3>
             <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
               <li>
                 <span className="font-medium text-white">
                   Architected and maintained enterprise advertising SDK
                 </span>{" "}
-                for Web & KaiOS platforms, serving millions of users across
-                India with{" "}
+                for Web & KaiOS platforms, serving millions of users across India with{" "}
                 <span className="text-green-400">&lt;200ms ad render time</span>
               </li>
               <li>
-                Designed modular SDK architecture with authentication,
-                environment configs, logging, event tracking, and comprehensive
-                error handling for production reliability
+                Designed modular SDK architecture with authentication, environment configs, logging,
+                event tracking, and comprehensive error handling for production reliability
               </li>
               <li>
-                <span className="font-medium text-white">
-                  Improved ad load performance by 80%
-                </span>{" "}
-                — from 1.2s to ~250ms through caching strategies, preloading
-                techniques, and optimized fallback logic
+                <span className="font-medium text-white">Improved ad load performance by 80%</span>{" "}
+                — from 1.2s to ~250ms through caching strategies, preloading techniques, and
+                optimized fallback logic
               </li>
               <li>
-                Implemented{" "}
-                <span className="text-purple-400">
-                  Playwright E2E automation
-                </span>{" "}
-                covering SDK integration scenarios, reducing QA cycles and
-                catching regressions early
+                Implemented <span className="text-purple-400">Playwright E2E automation</span>{" "}
+                covering SDK integration scenarios, reducing QA cycles and catching regressions
+                early
               </li>
               <li>
-                Created{" "}
-                <span className="text-purple-400">
-                  Postman-based API test suites
-                </span>{" "}
-                for partner onboarding, lifecycle validation, and automated
-                regression testing
+                Created <span className="text-purple-400">Postman-based API test suites</span> for
+                partner onboarding, lifecycle validation, and automated regression testing
               </li>
               <li>
                 Built debug mode and developer-friendly documentation,{" "}
-                <span className="text-green-400">
-                  reducing partner integration time by 40%
-                </span>
+                <span className="text-green-400">reducing partner integration time by 40%</span>
               </li>
               <li>
-                Collaborated cross-functionally with backend teams, campaign
-                managers, and QA to deliver features at scale
+                Collaborated cross-functionally with backend teams, campaign managers, and QA to
+                deliver features at scale
               </li>
             </ul>
           </div>
@@ -86,15 +68,11 @@ export default function ExperiencePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 pt-4 border-t border-neutral-700">
             <div className="text-center p-3 bg-neutral-900/30 rounded-lg">
               <div className="text-2xl font-bold text-blue-400">80%</div>
-              <div className="text-xs text-neutral-400 mt-1">
-                Faster Load Times
-              </div>
+              <div className="text-xs text-neutral-400 mt-1">Faster Load Times</div>
             </div>
             <div className="text-center p-3 bg-neutral-900/30 rounded-lg">
               <div className="text-2xl font-bold text-purple-400">40%</div>
-              <div className="text-xs text-neutral-400 mt-1">
-                Integration Time ↓
-              </div>
+              <div className="text-xs text-neutral-400 mt-1">Integration Time ↓</div>
             </div>
             <div className="text-center p-3 bg-neutral-900/30 rounded-lg">
               <div className="text-2xl font-bold text-cyan-400">100%</div>
@@ -111,12 +89,7 @@ export default function ExperiencePage() {
       {/* Product Engineering Projects */}
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-purple-400 mb-6 flex items-center gap-2">
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -139,45 +112,39 @@ export default function ExperiencePage() {
               </span>
             </div>
             <p className="text-neutral-400 mb-3">
-              Complete salon management platform with CRM automation, billing,
-              inventory tracking, and analytics
+              Complete salon management platform with CRM automation, billing, inventory tracking,
+              and analytics
             </p>
             <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4 mb-4">
               <li>
                 Built full-stack application:{" "}
-                <span className="text-cyan-400">React + Tailwind</span>{" "}
-                frontend,{" "}
-                <span className="text-green-400">Node.js + MongoDB</span>{" "}
-                backend
+                <span className="text-cyan-400">React + Tailwind</span> frontend,{" "}
+                <span className="text-green-400">Node.js + MongoDB</span> backend
               </li>
               <li>
                 Developed mobile apps for Android & iOS using{" "}
                 <span className="text-purple-400">Capacitor</span>
               </li>
               <li>
-                Integrated{" "}
-                <span className="text-blue-400">Razorpay subscriptions</span>{" "}
-                for automated billing and payment recovery
+                Integrated <span className="text-blue-400">Razorpay subscriptions</span> for
+                automated billing and payment recovery
               </li>
               <li>
-                Designed with <span className="text-pink-400">Figma</span>{" "}
-                prototypes before development for stakeholder alignment
+                Designed with <span className="text-pink-400">Figma</span> prototypes before
+                development for stakeholder alignment
               </li>
               <li>
-                Automated staff commission calculations, membership discounts,
-                and inventory alerts
+                Automated staff commission calculations, membership discounts, and inventory alerts
               </li>
               <li>
                 Accelerated development using{" "}
                 <span className="text-orange-400">GitHub Copilot</span> and{" "}
-                <span className="text-orange-400">ChatGPT</span> for code
-                generation, debugging, and documentation
+                <span className="text-orange-400">ChatGPT</span> for code generation, debugging, and
+                documentation
               </li>
             </ul>
             <div className="flex flex-wrap gap-2">
-              <span className="text-xs bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">
-                React
-              </span>
+              <span className="text-xs bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">React</span>
               <span className="text-xs bg-green-500/10 text-green-400 px-2 py-1 rounded">
                 Node.js
               </span>
@@ -187,9 +154,7 @@ export default function ExperiencePage() {
               <span className="text-xs bg-purple-500/10 text-purple-400 px-2 py-1 rounded">
                 Capacitor
               </span>
-              <span className="text-xs bg-pink-500/10 text-pink-400 px-2 py-1 rounded">
-                Figma
-              </span>
+              <span className="text-xs bg-pink-500/10 text-pink-400 px-2 py-1 rounded">Figma</span>
               <span className="text-xs bg-yellow-500/10 text-yellow-400 px-2 py-1 rounded">
                 Razorpay
               </span>
@@ -213,8 +178,8 @@ export default function ExperiencePage() {
               </span>
             </div>
             <p className="text-neutral-400 mb-3">
-              Society-based subscription platform with partner dashboard,
-              proof-of-service, and automated payments
+              Society-based subscription platform with partner dashboard, proof-of-service, and
+              automated payments
             </p>
             <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4 mb-4">
               <li>
@@ -223,35 +188,25 @@ export default function ExperiencePage() {
               </li>
               <li>
                 Implemented daily cleaning tracking with{" "}
-                <span className="text-purple-400">image proof upload</span> and
-                verification
+                <span className="text-purple-400">image proof upload</span> and verification
               </li>
               <li>
                 Built mobile-first PWA and native apps using{" "}
                 <span className="text-purple-400">Capacitor</span>
               </li>
               <li>
-                Automated{" "}
-                <span className="text-green-400">
-                  Razorpay subscription billing
-                </span>{" "}
-                with retry logic and payment recovery
+                Automated <span className="text-green-400">Razorpay subscription billing</span> with
+                retry logic and payment recovery
               </li>
+              <li>Optimized image uploads for low-bandwidth networks (6 AM–9 AM peak time)</li>
               <li>
-                Optimized image uploads for low-bandwidth networks (6 AM–9 AM
-                peak time)
-              </li>
-              <li>
-                Leveraged{" "}
-                <span className="text-orange-400">GitHub Copilot</span> and{" "}
-                <span className="text-orange-400">ChatGPT</span> for rapid
-                prototyping, API development, and problem-solving
+                Leveraged <span className="text-orange-400">GitHub Copilot</span> and{" "}
+                <span className="text-orange-400">ChatGPT</span> for rapid prototyping, API
+                development, and problem-solving
               </li>
             </ul>
             <div className="flex flex-wrap gap-2">
-              <span className="text-xs bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">
-                React
-              </span>
+              <span className="text-xs bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">React</span>
               <span className="text-xs bg-green-500/10 text-green-400 px-2 py-1 rounded">
                 Express.js
               </span>
@@ -281,12 +236,7 @@ export default function ExperiencePage() {
       {/* Technical Expertise */}
       <section className="card-overlay rounded-xl p-6 md:p-8">
         <h2 className="text-2xl font-semibold text-green-400 mb-6 flex items-center gap-2">
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -299,81 +249,63 @@ export default function ExperiencePage() {
 
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <h3 className="text-lg font-semibold text-blue-400 mb-3">
-              Frontend Development
-            </h3>
+            <h3 className="text-lg font-semibold text-blue-400 mb-3">Frontend Development</h3>
             <ul className="text-neutral-300 space-y-2">
               <li className="flex items-center gap-2">
-                <span className="text-cyan-400">▸</span> React.js (Hooks,
-                Context, Performance Optimization)
+                <span className="text-cyan-400">▸</span> React.js (Hooks, Context, Performance
+                Optimization)
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-cyan-400">▸</span> Tailwind CSS
-                (Responsive, Mobile-First Design)
+                <span className="text-cyan-400">▸</span> Tailwind CSS (Responsive, Mobile-First
+                Design)
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-cyan-400">▸</span> Figma (UI/UX Design &
-                Prototyping)
+                <span className="text-cyan-400">▸</span> Figma (UI/UX Design & Prototyping)
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-green-400 mb-3">
-              Backend Development
-            </h3>
+            <h3 className="text-lg font-semibold text-green-400 mb-3">Backend Development</h3>
             <ul className="text-neutral-300 space-y-2">
               <li className="flex items-center gap-2">
-                <span className="text-green-400">▸</span> Node.js + Express.js
-                (RESTful APIs)
+                <span className="text-green-400">▸</span> Node.js + Express.js (RESTful APIs)
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-green-400">▸</span> MongoDB (Schema
-                Design, Aggregation)
+                <span className="text-green-400">▸</span> MongoDB (Schema Design, Aggregation)
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-green-400">▸</span> JWT Authentication &
-                Authorization
+                <span className="text-green-400">▸</span> JWT Authentication & Authorization
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-purple-400 mb-3">
-              Mobile & Cross-Platform
-            </h3>
+            <h3 className="text-lg font-semibold text-purple-400 mb-3">Mobile & Cross-Platform</h3>
             <ul className="text-neutral-300 space-y-2">
               <li className="flex items-center gap-2">
-                <span className="text-purple-400">▸</span> Capacitor (Android &
-                iOS Native Apps)
+                <span className="text-purple-400">▸</span> Capacitor (Android & iOS Native Apps)
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-purple-400">▸</span> Progressive Web Apps
-                (PWA)
+                <span className="text-purple-400">▸</span> Progressive Web Apps (PWA)
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-purple-400">▸</span> Android Studio &
-                Xcode
+                <span className="text-purple-400">▸</span> Android Studio & Xcode
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-pink-400 mb-3">
-              Testing & DevOps
-            </h3>
+            <h3 className="text-lg font-semibold text-pink-400 mb-3">Testing & DevOps</h3>
             <ul className="text-neutral-300 space-y-2">
               <li className="flex items-center gap-2">
-                <span className="text-pink-400">▸</span> Playwright (E2E
-                Automation)
+                <span className="text-pink-400">▸</span> Playwright (E2E Automation)
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-pink-400">▸</span> Postman (API Testing &
-                Documentation)
+                <span className="text-pink-400">▸</span> Postman (API Testing & Documentation)
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-pink-400">▸</span> Git & GitHub (Version
-                Control)
+                <span className="text-pink-400">▸</span> Git & GitHub (Version Control)
               </li>
             </ul>
           </div>

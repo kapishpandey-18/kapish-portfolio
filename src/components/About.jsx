@@ -15,66 +15,51 @@ export default function About() {
       <div className="card-overlay rounded-xl p-8 md:p-12 max-w-4xl mx-auto">
         <div className="space-y-6 text-neutral-300 leading-relaxed">
           <p className="text-lg">
-            Hi! I'm{" "}
-            <span className="text-blue-500 font-semibold">{profile.name}</span>,
-            a Senior Software Engineer with 7+ years of experience specializing
-            in{" "}
+            Hi! I'm <span className="text-blue-500 font-semibold">{profile.name}</span>, a Senior
+            Software Engineer with 7+ years of experience specializing in{" "}
             <span className="text-purple-400">
-              full-stack development, SDK architecture, and mobile app
-              development
+              full-stack development, SDK architecture, and mobile app development
             </span>
-            . I build scalable, production-ready solutions ranging from
-            enterprise advertising SDKs to complete SaaS platforms.
+            . I build scalable, production-ready solutions ranging from enterprise advertising SDKs
+            to complete SaaS platforms.
           </p>
 
           <p>
             Currently at{" "}
-            <span className="text-cyan-400 font-semibold">
-              Quest Global (Jio Platforms Ltd)
-            </span>
-            , I architect and maintain the{" "}
-            <span className="text-blue-400">JioAds SDK ecosystem</span> for Web
-            and KaiOS platforms, serving millions of users across India. I've
-            reduced ad load times by{" "}
-            <span className="font-semibold text-green-400">80%</span> (from 1.2s
-            to ~250ms) and implemented comprehensive E2E testing with{" "}
-            <span className="text-purple-400">Playwright</span> and API
-            validation with <span className="text-purple-400">Postman</span>.
+            <span className="text-cyan-400 font-semibold">Quest Global (Jio Platforms Ltd)</span>, I
+            architect and maintain the <span className="text-blue-400">JioAds SDK ecosystem</span>{" "}
+            for Web and KaiOS platforms, serving millions of users across India. I've reduced ad
+            load times by <span className="font-semibold text-green-400">80%</span> (from 1.2s to
+            ~250ms) and implemented comprehensive E2E testing with{" "}
+            <span className="text-purple-400">Playwright</span> and API validation with{" "}
+            <span className="text-purple-400">Postman</span>.
           </p>
 
           <p>
             My expertise spans the entire product lifecycle — from{" "}
-            <span className="text-blue-400">Figma prototypes</span> to
-            pixel-perfect{" "}
-            <span className="text-cyan-400">React + Tailwind CSS</span>{" "}
-            frontends, robust{" "}
-            <span className="text-green-400">Node.js + Express</span> backends,
-            and cross-platform mobile apps using{" "}
-            <span className="text-purple-400">Capacitor</span> (Android/iOS). I
-            excel at creating developer-friendly SDKs with comprehensive
-            documentation and debug modes.
+            <span className="text-blue-400">Figma prototypes</span> to pixel-perfect{" "}
+            <span className="text-cyan-400">React + Tailwind CSS</span> frontends, robust{" "}
+            <span className="text-green-400">Node.js + Express</span> backends, and cross-platform
+            mobile apps using <span className="text-purple-400">Capacitor</span> (Android/iOS). I
+            excel at creating developer-friendly SDKs with comprehensive documentation and debug
+            modes.
           </p>
 
           <p>
-            As a{" "}
-            <span className="text-purple-400 font-semibold">
-              product engineer
-            </span>
-            , I've built and launched two complete SaaS platforms:
-            <span className="text-blue-400"> SalonMind</span> (AI-powered salon
-            management with CRM, billing, inventory, and analytics) and{" "}
-            <span className="text-cyan-400"> MyCar Platform</span>{" "}
-            (subscription-based car cleaning with partner dashboard and
-            proof-of-service tracking). Both include web apps, mobile apps,
-            payment automation with Razorpay, and complete backend systems.
+            As a <span className="text-purple-400 font-semibold">product engineer</span>, I've built
+            and launched two complete SaaS platforms:
+            <span className="text-blue-400"> SalonMind</span> (AI-powered salon management with CRM,
+            billing, inventory, and analytics) and{" "}
+            <span className="text-cyan-400"> MyCar Platform</span> (subscription-based car cleaning
+            with partner dashboard and proof-of-service tracking). Both include web apps, mobile
+            apps, payment automation with Razorpay, and complete backend systems.
           </p>
 
           <p className="text-lg border-l-4 border-blue-500 pl-4 italic bg-neutral-900/30 py-3 rounded-r-lg">
-            "I thrive on solving complex technical challenges and transforming
-            ideas into production-ready products. My approach combines modern
-            tooling (React, Node, Capacitor), automated testing (Playwright,
-            Postman), and design-first thinking (Figma) to deliver exceptional
-            user experiences."
+            "I thrive on solving complex technical challenges and transforming ideas into
+            production-ready products. My approach combines modern tooling (React, Node, Capacitor),
+            automated testing (Playwright, Postman), and design-first thinking (Figma) to deliver
+            exceptional user experiences."
           </p>
 
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -100,9 +85,7 @@ export default function About() {
               </svg>
               <div>
                 <div className="text-sm text-neutral-400">Location</div>
-                <div className="font-medium text-blue-400">
-                  {profile.location}
-                </div>
+                <div className="font-medium text-blue-400">{profile.location}</div>
               </div>
             </div>
 
@@ -142,9 +125,7 @@ export default function About() {
               </svg>
               <div>
                 <div className="text-sm text-neutral-400">Status</div>
-                <div className="font-medium text-cyan-400">
-                  Available for Freelance
-                </div>
+                <div className="font-medium text-cyan-400">Available for Freelance</div>
               </div>
             </div>
 
@@ -164,9 +145,7 @@ export default function About() {
               </svg>
               <div>
                 <div className="text-sm text-neutral-400">Specialization</div>
-                <div className="font-medium text-green-400">
-                  Full-Stack + Mobile + SDKs
-                </div>
+                <div className="font-medium text-green-400">Full-Stack + Mobile + SDKs</div>
               </div>
             </div>
           </div>

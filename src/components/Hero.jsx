@@ -29,13 +29,9 @@ export default function Hero() {
             {profile.name}
           </h1>
 
-          <p className="mt-3 text-xl md:text-2xl text-blue-500 font-medium">
-            {profile.title}
-          </p>
+          <p className="mt-3 text-xl md:text-2xl text-blue-500 font-medium">{profile.title}</p>
 
-          <p className="mt-4 max-w-2xl text-neutral-400 leading-relaxed">
-            {profile.summary}
-          </p>
+          <p className="mt-4 max-w-2xl text-neutral-400 leading-relaxed">{profile.summary}</p>
 
           {/* Skills */}
           <div className="mt-6 flex flex-wrap gap-2 justify-center md:justify-start">
@@ -86,12 +82,7 @@ export default function Hero() {
               className="px-6 py-3 rounded-lg border border-neutral-700 text-neutral-300 font-medium hover:border-purple-600 hover:text-purple-600 hover:bg-purple-600/5 transition-all duration-300"
             >
               <span className="flex items-center gap-2">
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"

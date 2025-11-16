@@ -4,12 +4,11 @@
 // This is where React takes control of your HTML and starts rendering components.
 // Think of this as the "ignition switch" that starts your React app.
 
-
 // ============================================================================
 // IMPORT 1: React Core Library
 // ============================================================================
-import React from 'react'
-// 
+import React from "react";
+//
 // WHY: React is the core library that enables JSX syntax and component creation
 // WHAT IT DOES:
 // - Allows you to write JSX (HTML-like syntax in JavaScript)
@@ -22,11 +21,10 @@ import React from 'react'
 // EXAMPLE:
 // <App /> is JSX that React transforms to: React.createElement(App, null)
 
-
 // ============================================================================
 // IMPORT 2: React DOM - The Bridge Between React and Browser
 // ============================================================================
-import { createRoot } from 'react-dom/client'
+import { createRoot } from "react-dom/client";
 //
 // WHY: React is platform-agnostic (can render to web, mobile, VR, etc.)
 //      ReactDOM is specifically for WEB browsers (DOM = Document Object Model)
@@ -46,11 +44,10 @@ import { createRoot } from 'react-dom/client'
 // New way: createRoot(element).render(<App />)
 // New way enables "Concurrent Features" (better performance, smoother UX)
 
-
 // ============================================================================
 // IMPORT 3: React Router - Client-Side Navigation
 // ============================================================================
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from "react-router-dom";
 //
 // WHY: By default, clicking links reloads the entire page
 //      BrowserRouter enables Single Page Application (SPA) behavior
@@ -62,7 +59,7 @@ import { BrowserRouter } from 'react-router-dom'
 // - Manages browser history (back/forward buttons work correctly)
 //
 // HOW IT WORKS:
-// User clicks <Link to="/about"> 
+// User clicks <Link to="/about">
 //   → BrowserRouter catches it
 //   → Changes URL to /about (no reload!)
 //   → React Router shows <About /> component
@@ -78,11 +75,10 @@ import { BrowserRouter } from 'react-router-dom'
 // - <MemoryRouter> - No URL changes (for testing)
 // - <BrowserRouter> - Clean URLs /about (requires server config)
 
-
 // ============================================================================
 // IMPORT 4: Your Main App Component
 // ============================================================================
-import App from './App.jsx'
+import App from "./App.jsx";
 //
 // WHY: This is YOUR code - the actual application you built
 //
@@ -94,11 +90,10 @@ import App from './App.jsx'
 // THE HIERARCHY:
 // main.jsx (setup) → App.jsx (routes) → Components (Hero, Projects, etc.)
 
-
 // ============================================================================
 // IMPORT 5: Global Styles
 // ============================================================================
-import './index.css'
+import "./index.css";
 //
 // WHY: Import CSS once at the top level, applies to entire app
 //
@@ -109,38 +104,35 @@ import './index.css'
 //
 // WHY HERE: Imported before App renders, so styles are ready immediately
 
-
 // ============================================================================
 // THE RENDERING PROCESS - THIS IS WHERE REACT TAKES CONTROL
 // ============================================================================
 
 // STEP 1: Find the HTML element React will control
 // ----------------------------------------------------------------------------
-createRoot(document.getElementById('root'))
-//
-// EXPLANATION:
-// - document.getElementById('root') finds <div id="root"> in index.html
-// - createRoot(element) tells React: "This div is now yours"
-// - React will manage EVERYTHING inside this div
-// - Nothing outside this div is affected by React
-//
-// IN index.html you have:
-// <body>
-//   <div id="root"></div>  ← React takes control of THIS
-//   <script src="/src/main.jsx"></script>
-// </body>
+createRoot(document.getElementById("root"))
+  //
+  // EXPLANATION:
+  // - document.getElementById('root') finds <div id="root"> in index.html
+  // - createRoot(element) tells React: "This div is now yours"
+  // - React will manage EVERYTHING inside this div
+  // - Nothing outside this div is affected by React
+  //
+  // IN index.html you have:
+  // <body>
+  //   <div id="root"></div>  ← React takes control of THIS
+  //   <script src="/src/main.jsx"></script>
+  // </body>
 
-
-// STEP 2: Tell React what to render
-// ----------------------------------------------------------------------------
+  // STEP 2: Tell React what to render
+  // ----------------------------------------------------------------------------
   .render(
-  // Everything inside render() is what React will display inside <div id="root">
+    // Everything inside render() is what React will display inside <div id="root">
 
-
-  // WRAPPER 1: StrictMode (Development Helper)
-  // --------------------------------------------------------------------------
-  <React.StrictMode>
-    {/* 
+    // WRAPPER 1: StrictMode (Development Helper)
+    // --------------------------------------------------------------------------
+    <React.StrictMode>
+      {/* 
       WHAT IT DOES:
       - Activates extra checks and warnings (only in development)
       - Helps you write better React code
@@ -164,11 +156,10 @@ createRoot(document.getElementById('root'))
       - No performance impact
     */}
 
-
-    {/* WRAPPER 2: BrowserRouter (Enables Routing) */}
-    {/* ---------------------------------------------------------------------- */}
-    <BrowserRouter>
-      {/*
+      {/* WRAPPER 2: BrowserRouter (Enables Routing) */}
+      {/* ---------------------------------------------------------------------- */}
+      <BrowserRouter>
+        {/*
         WHAT IT DOES:
         - Wraps your app to enable client-side routing
         - Listens to URL changes
@@ -201,11 +192,10 @@ createRoot(document.getElementById('root'))
         - Without this wrapper, routing features would fail
       */}
 
-
-      {/* WRAPPER 3: Container Div with Styling */}
-      {/* ---------------------------------------------------------------------- */}
-      <div className="min-h-screen text-neutral-100">
-        {/*
+        {/* WRAPPER 3: Container Div with Styling */}
+        {/* ---------------------------------------------------------------------- */}
+        <div className="min-h-screen text-neutral-100">
+          {/*
           WHAT IT DOES:
           - Provides full-height background
           - Sets default text color for entire app
@@ -220,11 +210,10 @@ createRoot(document.getElementById('root'))
           - Sets baseline text color (children can override)
         */}
 
-
-        {/* YOUR ACTUAL APPLICATION */}
-        {/* ---------------------------------------------------------------------- */}
-        <App />
-        {/*
+          {/* YOUR ACTUAL APPLICATION */}
+          {/* ---------------------------------------------------------------------- */}
+          <App />
+          {/*
           THIS IS YOUR APP!
           
           WHAT HAPPENS HERE:
@@ -271,13 +260,10 @@ createRoot(document.getElementById('root'))
           - Updates only what changed (super efficient!)
           - You don't manually update HTML - React does it automatically
         */}
-
-      </div>
-    </BrowserRouter>
-
-  </React.StrictMode>
-)
-
+        </div>
+      </BrowserRouter>
+    </React.StrictMode>
+  );
 
 // ============================================================================
 // THE BIG PICTURE - COMPLETE FLOW FROM START TO FINISH
@@ -345,7 +331,6 @@ createRoot(document.getElementById('root'))
 //    └─ UI transitions smoothly
 //
 // ============================================================================
-
 
 // ============================================================================
 // WHY THIS ARCHITECTURE?

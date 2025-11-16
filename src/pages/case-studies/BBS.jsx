@@ -8,8 +8,7 @@ export default function CSBBS() {
         <div>
           <h2 className="text-2xl font-semibold text-blue-400 mb-4">Problem</h2>
           <p className="text-neutral-300 leading-relaxed mb-4">
-            Most salons rely on manual registers or WhatsApp for appointments,
-            leading to:
+            Most salons rely on manual registers or WhatsApp for appointments, leading to:
           </p>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>Missed bookings</li>
@@ -62,9 +61,7 @@ export default function CSBBS() {
       title: "Solution",
       content: (
         <div>
-          <h2 className="text-2xl font-semibold text-blue-400 mb-4">
-            Solution / Features
-          </h2>
+          <h2 className="text-2xl font-semibold text-blue-400 mb-4">Solution / Features</h2>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>15-day free trial onboarding → upgrade via Razorpay</li>
             <li>Smart appointment calendar with auto reminders</li>
@@ -83,16 +80,12 @@ export default function CSBBS() {
       title: "Tech Stack",
       content: (
         <div>
-          <h2 className="text-2xl font-semibold text-blue-400 mb-4">
-            Tech Stack
-          </h2>
+          <h2 className="text-2xl font-semibold text-blue-400 mb-4">Tech Stack</h2>
           <div className="overflow-x-auto">
             <table className="min-w-full border border-neutral-700 rounded-lg">
               <thead className="bg-neutral-800">
                 <tr>
-                  <th className="px-6 py-3 text-left text-sm font-semibold text-blue-400">
-                    Layer
-                  </th>
+                  <th className="px-6 py-3 text-left text-sm font-semibold text-blue-400">Layer</th>
                   <th className="px-6 py-3 text-left text-sm font-semibold text-blue-400">
                     Technology
                   </th>
@@ -101,15 +94,11 @@ export default function CSBBS() {
               <tbody className="divide-y divide-neutral-700">
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Frontend</td>
-                  <td className="px-6 py-3 text-neutral-300">
-                    React.js, Tailwind CSS
-                  </td>
+                  <td className="px-6 py-3 text-neutral-300">React.js, Tailwind CSS</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Backend</td>
-                  <td className="px-6 py-3 text-neutral-300">
-                    Node.js, Express.js
-                  </td>
+                  <td className="px-6 py-3 text-neutral-300">Node.js, Express.js</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Database</td>
@@ -121,9 +110,7 @@ export default function CSBBS() {
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Payments</td>
-                  <td className="px-6 py-3 text-neutral-300">
-                    Razorpay Subscriptions
-                  </td>
+                  <td className="px-6 py-3 text-neutral-300">Razorpay Subscriptions</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Notifications</td>
@@ -131,9 +118,7 @@ export default function CSBBS() {
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Mobile App</td>
-                  <td className="px-6 py-3 text-neutral-300">
-                    Capacitor (Web → Android & iOS)
-                  </td>
+                  <td className="px-6 py-3 text-neutral-300">Capacitor (Web → Android & iOS)</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-neutral-300">Deployment</td>
@@ -149,9 +134,7 @@ export default function CSBBS() {
       title: "Outcomes",
       content: (
         <div>
-          <h2 className="text-2xl font-semibold text-blue-400 mb-4">
-            Outcomes
-          </h2>
+          <h2 className="text-2xl font-semibold text-blue-400 mb-4">Outcomes</h2>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>Eliminates manual registers & calculations</li>
             <li>Reduces appointment drop-off by reminders</li>
@@ -166,15 +149,11 @@ export default function CSBBS() {
       title: "Challenges",
       content: (
         <div>
-          <h2 className="text-2xl font-semibold text-blue-400 mb-4">
-            Challenges
-          </h2>
+          <h2 className="text-2xl font-semibold text-blue-400 mb-4">Challenges</h2>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>Designing the DB to support multi-branch future</li>
             <li>Handling dynamic service pricing by gender & package</li>
-            <li>
-              Syncing appointment, billing, membership, and CRM modules together
-            </li>
+            <li>Syncing appointment, billing, membership, and CRM modules together</li>
           </ul>
         </div>
       ),
@@ -183,9 +162,7 @@ export default function CSBBS() {
       title: "Learnings",
       content: (
         <div>
-          <h2 className="text-2xl font-semibold text-blue-400 mb-4">
-            Learnings
-          </h2>
+          <h2 className="text-2xl font-semibold text-blue-400 mb-4">Learnings</h2>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>Real-world salons need automation more than UI</li>
             <li>CRM + reminders have more impact than just billing</li>
@@ -198,9 +175,7 @@ export default function CSBBS() {
       title: "Future Roadmap",
       content: (
         <div>
-          <h2 className="text-2xl font-semibold text-blue-400 mb-4">
-            Future Roadmap
-          </h2>
+          <h2 className="text-2xl font-semibold text-blue-400 mb-4">Future Roadmap</h2>
           <ul className="list-disc list-inside text-neutral-300 space-y-2 ml-4">
             <li>WhatsApp and SMS automation for follow-ups</li>
             <li>AI-based smart rebooking recommendations</li>
@@ -217,10 +192,10 @@ export default function CSBBS() {
         <div className="p-6 bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-xl border border-blue-500/30">
           <h2 className="text-xl font-semibold text-blue-300 mb-4">Summary</h2>
           <p className="text-neutral-300 leading-relaxed">
-            SalonMind transforms manual salon operations into a fully automated
-            SaaS ecosystem powered by AI, CRM, analytics, and digital payments.
-            By centralizing all salon management tasks, it saves time, boosts
-            client retention, and provides actionable business insights.
+            SalonMind transforms manual salon operations into a fully automated SaaS ecosystem
+            powered by AI, CRM, analytics, and digital payments. By centralizing all salon
+            management tasks, it saves time, boosts client retention, and provides actionable
+            business insights.
           </p>
         </div>
       ),

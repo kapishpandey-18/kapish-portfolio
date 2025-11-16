@@ -6,5 +6,5 @@ export default function Footer() {
         <p className="hidden sm:block">Built with React + Tailwind, deployed on Vercel</p>
       </div>
     </footer>
-  )
+  );
 }

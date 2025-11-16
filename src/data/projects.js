@@ -2,15 +2,7 @@ export const projects = [
   {
     title: "SalonMind — SaaS Salon Management Platform",
     period: "2024–2025",
-    stack: [
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Capacitor",
-      "Figma",
-      "Playwright",
-      "Postman",
-    ],
+    stack: ["React", "Node.js", "MongoDB", "Capacitor", "Figma", "Playwright", "Postman"],
     description:
       "Complete SaaS platform for salon operations with Admin, Employee, and Client portals. Lead Engineer & System Architect responsible for full-stack development, UI/UX design, and testing infrastructure.",
     highlights: [
@@ -28,15 +20,7 @@ export const projects = [
   {
     title: "MyCar Platform — Car Cleaning Subscription App",
     period: "2024–2025",
-    stack: [
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Capacitor",
-      "Figma",
-      "Playwright",
-      "Postman",
-    ],
+    stack: ["React", "Node.js", "MongoDB", "Capacitor", "Figma", "Playwright", "Postman"],
     description:
       "Complete mobile apps for Users & Partners with subscription engine, cleaner management, and proof-of-service tracking. Lead Engineer & System Architect for end-to-end product development.",
     highlights: [

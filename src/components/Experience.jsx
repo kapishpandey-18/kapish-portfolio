@@ -12,13 +12,9 @@ export default function Experience() {
           >
             <div className="flex items-center justify-between gap-3">
               <div>
-                <p className="font-medium group-hover:text-blue-400 transition-colors">
-                  {e.role}
-                </p>
+                <p className="font-medium group-hover:text-blue-400 transition-colors">{e.role}</p>
                 <p className="text-sm text-neutral-400">{e.company}</p>
-                {e.location && (
-                  <p className="text-xs text-neutral-500 mt-1">{e.location}</p>
-                )}
+                {e.location && <p className="text-xs text-neutral-500 mt-1">{e.location}</p>}
               </div>
               <span className="text-xs text-neutral-400">{e.period}</span>
             </div>
