@@ -17,14 +17,22 @@ body {
 
 /* Subtle animated gradient overlay */
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+  background: radial-gradient(
+      circle at 20% 50%,
+      rgba(59, 130, 246, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(139, 92, 246, 0.1) 0%,
+      transparent 50%
+    );
   pointer-events: none;
   z-index: 0;
 }
@@ -49,4 +57,14 @@ body::before {
   border-color: rgba(59, 130, 246, 0.5);
   box-shadow: 0 8px 32px rgba(59, 130, 246, 0.2);
   transform: translateY(-2px);
+}
+
+/* Hide scrollbar for tabs navigation */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

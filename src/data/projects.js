@@ -1,50 +1,71 @@
 export const projects = [
   {
-    title: "Beyond Beauty Studio (BBS Platform) — SaaS Salon Management System",
+    title: "SalonMind — SaaS Salon Management Platform",
     period: "2024–2025",
-    stack: ["React", "Node.js", "MongoDB", "Capacitor", "Tailwind CSS"],
-    description:
-      "Complete salon management SaaS platform with Admin, Employee, and Client portals. Features include services catalog, member passes, billing, daily salary tracking, commission management, and P&L dashboards.",
-    highlights: [
-      "Designed and developed modular SDKs for multi-environment endpoint selection and analytics integration",
-      "Implemented daily salary, commission, and service tracking modules with scalable backend APIs",
-      "Built reusable React components and Node.js APIs for seamless portal integration",
-      "Documentation-first approach with PRD, API contracts, and DB schemas"
+    stack: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Capacitor",
+      "Figma",
+      "Playwright",
+      "Postman",
     ],
-    repo: "https://github.com/kapish2025/bbs-platform",
+    description:
+      "Complete SaaS platform for salon operations with Admin, Employee, and Client portals. Lead Engineer & System Architect responsible for full-stack development, UI/UX design, and testing infrastructure.",
+    highlights: [
+      "Built complete SaaS platform with Admin, Employee, and Client portals",
+      "Designed full Figma UI/UX including dashboards, workflows, and reusable components",
+      "Architected backend modules: payroll, commission engine, RBAC, service management, appointments",
+      "Developed mobile app using Capacitor for staff & manager workflows",
+      "Implemented Playwright E2E test coverage (in progress)",
+      "Created Postman API test suites covering all backend systems",
+    ],
+    repo: "https://github.com/kapishpandey-18/salonmind",
     live: "",
-    image: "/assets/bbs-cover.png.svg"
+    image: "/assets/salonmind-cover.svg",
   },
   {
-    title: "CleanMyCar Platform — Subscription-based Car Cleaning App",
-    period: "2025",
-    stack: ["React", "Node.js", "MongoDB", "Twilio OTP", "Tailwind CSS"],
-    description:
-      "End-to-end car cleaning platform with owner and cleaner portals. Features include subscription management, GPS tracking, daily proof of cleaning, time-slot booking, and payment integration.",
-    highlights: [
-      "Built complete system architecture with authentication, subscription, and scheduling modules",
-      "Integrated Twilio OTP for secure user authentication",
-      "Developed Node APIs for cleaner assignment and time-slot management",
-      "Deployed staging version with React frontend and secure REST API endpoints"
+    title: "MyCar Platform — Car Cleaning Subscription App",
+    period: "2024–2025",
+    stack: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Capacitor",
+      "Figma",
+      "Playwright",
+      "Postman",
     ],
-    repo: "https://github.com/kapish2025/cleanmycar",
+    description:
+      "Complete mobile apps for Users & Partners with subscription engine, cleaner management, and proof-of-service tracking. Lead Engineer & System Architect for end-to-end product development.",
+    highlights: [
+      "Built complete mobile apps for Users & Partners using Capacitor (Android/iOS)",
+      "Designed subscription engine, cleaner assignment, daily logs, check-in/out, proof uploads",
+      "Created all Figma UI/UX including onboarding, subscriptions, cleaner dashboard, and workflows",
+      "Built scalable backend for multi-society, multi-partner operations",
+      "Created Postman API tests for critical workflows",
+      "Developing Playwright-based automation for user journeys (in progress)",
+    ],
+    repo: "https://github.com/kapishpandey-18/mycar",
     live: "",
-    image: "/assets/cmc-cover.png.svg"
+    image: "/assets/mycar-cover.svg",
   },
   {
-    title: "JavaScript SDK — Environment-Configurable SDK",
-    period: "2018–Present (Jio Projects)",
-    stack: ["JavaScript (ES6+)", "Class-based Architecture", "Fetch API", "Auth"],
+    title: "JioAds SDK — Web & KaiOS SDK Development",
+    period: "2018–Present",
+    stack: ["JavaScript (ES6+)", "SDK Architecture", "Playwright", "Postman"],
     description:
-      "Environment-configurable SDK modules with authentication, error-handling, and analytics for Web and KaiOS platforms. Designed for scalability and easy integration across multiple applications.",
+      "Built and maintained JioAds Web & KaiOS SDKs used across partner and internal apps. Designed modular SDK architecture with comprehensive testing infrastructure.",
     highlights: [
-      "Built class-based SDK architecture with reusable modules for authentication and error handling",
-      "Implemented config-driven endpoint selection (dev, staging, preprod, production)",
-      "Developed SDK documentation and integration playbooks for third-party developers",
-      "Leveraged AI tools (GitHub Copilot, ChatGPT) for rapid prototyping and validation"
+      "Built and maintained JioAds Web & KaiOS SDKs used across partner and internal apps",
+      "Designed modular SDK architecture: authentication, environment configs, logging, events, analytics",
+      "Developed Playwright-based E2E automation covering SDK integration scenarios",
+      "Created Postman-based API test suites for partner onboarding and API lifecycle validation",
+      "Collaborated with product and QA teams, improving partner integration time by 40%",
     ],
     repo: "",
     live: "",
-    image: "/assets/sdk-cover.png.svg"
-  }
-]
+    image: "/assets/jioads-cover.svg",
+  },
+];

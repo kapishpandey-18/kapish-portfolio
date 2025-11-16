@@ -1,0 +1,65 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="jioadsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="jioadsOverlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#581c87;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Base -->
+  <rect width="800" height="450" fill="url(#jioadsGradient)"/>
+  <rect width="800" height="450" fill="url(#jioadsOverlay)"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="120" cy="100" r="85" fill="#c084fc" opacity="0.1"/>
+  <circle cx="690" cy="340" r="105" fill="#f472b6" opacity="0.15"/>
+  <circle cx="620" cy="90" r="65" fill="#d946ef" opacity="0.1"/>
+  
+  <!-- Icon Background Circle -->
+  <circle cx="400" cy="180" r="70" fill="#1e293b" opacity="0.5"/>
+  
+  <!-- SDK/Code Icon -->
+  <g transform="translate(360, 150)">
+    <!-- Code brackets -->
+    <path d="M 10 30 L 5 40 L 10 50" stroke="#c084fc" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 70 30 L 75 40 L 70 50" stroke="#c084fc" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- Code lines -->
+    <line x1="25" y1="30" x2="45" y2="30" stroke="#f472b6" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="40" x2="55" y2="40" stroke="#f472b6" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="50" x2="40" y2="50" stroke="#f472b6" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Network nodes representing SDK integration -->
+  <g opacity="0.4">
+    <circle cx="250" cy="120" r="6" fill="#fbbf24"/>
+    <circle cx="320" cy="140" r="5" fill="#fbbf24"/>
+    <circle cx="480" cy="140" r="5" fill="#fbbf24"/>
+    <circle cx="550" cy="120" r="6" fill="#fbbf24"/>
+    <line x1="250" y1="120" x2="320" y2="140" stroke="#fbbf24" stroke-width="1"/>
+    <line x1="480" y1="140" x2="550" y2="120" stroke="#fbbf24" stroke-width="1"/>
+  </g>
+  
+  <!-- Data flow particles -->
+  <g opacity="0.5">
+    <rect x="280" y="280" width="8" height="8" rx="1" fill="#c084fc"/>
+    <rect x="310" y="300" width="6" height="6" rx="1" fill="#f472b6"/>
+    <rect x="480" y="290" width="7" height="7" rx="1" fill="#c084fc"/>
+    <rect x="510" y="310" width="6" height="6" rx="1" fill="#f472b6"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="290" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    JioAds SDK
+  </text>
+  <text x="400" y="320" font-family="Arial, sans-serif" font-size="20" fill="#fae8ff" text-anchor="middle" opacity="0.9">
+    Enterprise Advertising Platform
+  </text>
+  
+  <!-- Bottom accent line -->
+  <rect x="250" y="360" width="300" height="3" rx="1.5" fill="#c084fc" opacity="0.5"/>
+</svg>

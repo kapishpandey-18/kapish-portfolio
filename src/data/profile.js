@@ -1,17 +1,32 @@
 export const profile = {
   name: "Kapish Pandey",
-  title: "Senior Software Engineer | Full-Stack (React / Node / SDKs / MongoDB)",
+  title: "Senior Software Engineer (React / Node / SDKs / Mobile Apps)",
   location: "Gurgaon, Haryana",
   phone: "+91 8073820914",
   email: "kapish.p03@gmail.com",
-  github: "https://github.com/kapish2025",
+  github: "https://github.com/kapishpandey18",
   linkedin: "https://www.linkedin.com/in/kapish-pandey",
   summary:
-    "Senior Software Engineer with 8+ years of experience in JavaScript, React, and Node.js, specializing in SDK development and integration for large-scale ad-tech platforms. Skilled in building environment-configurable SDKs, designing scalable architectures, and collaborating with cross-functional teams to deliver high-quality, production-ready solutions. Experienced in leveraging AI tools like GitHub Copilot and ChatGPT to accelerate development, documentation, and testing workflows.",
+    "Senior Software Engineer with 7+ years of experience building scalable SDKs, full-stack applications, mobile apps using Capacitor, architecting complete systems, and delivering end-to-end products including SalonMind and MyCar Platform. Strong in React, Node.js, MongoDB, Playwright E2E testing, Postman API validation, Figma UI/UX, and product-focused engineering.",
   skills: [
-    "JavaScript (ES6+)", "React.js", "Node.js", "Express.js", "MongoDB",
-    "HTML5", "CSS3", "Tailwind CSS", "SDK Development", "API Integrations",
-    "Git", "Postman", "Figma", "GitHub Copilot", "ChatGPT",
-    "Android Studio", "Xcode", "Capacitor", "System Design", "SaaS Platforms"
-  ]
-}
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "Capacitor (Android/iOS)",
+    "Playwright (E2E)",
+    "Postman (API Testing)",
+    "Figma (UI/UX)",
+    "SDK Development",
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Android Studio",
+    "Xcode",
+    "System Architecture",
+    "Product Engineering",
+  ],
+};

@@ -5,11 +5,12 @@ export const experience = [
     period: "Mar 2018 — Present",
     location: "Mumbai / Remote",
     points: [
-      "Drove SDK development and integration efforts, coordinating between multiple product and partner teams to deliver robust, scalable, and easy-to-adopt Web and KaiOS SDK solutions",
-      "Designed and maintained environment-configurable SDK modules with authentication, error-handling, and analytics",
-      "Collaborated with internal stakeholders and third-party developers to streamline onboarding and improve SDK adoption rates",
-      "Developed reusable JavaScript and React components that enhanced integration speed and reliability",
-      "Leveraged AI-assisted tools (GitHub Copilot, ChatGPT) for rapid prototyping, documentation, and architectural validation"
-    ]
-  }
-]
+      "Built and maintained JioAds Web & KaiOS SDKs used across partner and internal apps",
+      "Designed modular SDK architecture: authentication, environment configs, logging, events, analytics",
+      "Developed Playwright-based E2E automation covering SDK integration scenarios",
+      "Created Postman-based API test suites for partner onboarding and API lifecycle validation",
+      "Collaborated with product and QA teams, improving partner integration time by 40%",
+      "Used GitHub Copilot + ChatGPT for faster development and documentation",
+    ],
+  },
+];
