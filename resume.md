@@ -1,10 +1,12 @@
+Kapish Pandey
+
 Senior Software Engineer (React / Node / SDKs / Mobile Apps)
 
-Gurgaon, Haryana \| +91 8073820914 \| kapish.p03@gmail.com \| github.com/kapish2025
+Gurgaon, Haryana \| +91 8073820914 \| kapish.p03@gmail.com \| github.com/kapishpandey-18 \| linkedin.com/in/kapishpandey
 
 # Professional Summary
 
-Senior Software Engineer with 8+ years of experience building scalable SDKs, full-stack applications, mobile apps using Capacitor, architecting complete systems, and delivering end-to-end products including SalonMind and MyCar Platform. Strong in React, Node.js, MongoDB, Playwright E2E testing, Postman API validation, Figma UI/UX, and product-focused engineering.
+Senior Software Engineer with 7+ years of experience building scalable SDKs, full-stack applications, mobile apps using Capacitor, architecting complete systems, and delivering end-to-end products including SalonMind and MyCar Platform. Strong in React, Node.js, MongoDB, Playwright E2E testing, Postman API validation, Figma UI/UX, and product-focused engineering.
 
 # Core Highlights
 
@@ -22,7 +24,7 @@ Senior Software Engineer \| Mar 2018 -- Present \| Mumbai / Remote
 • Collaborated with product and QA teams, improving partner integration time by 40%.\
 • Used GitHub Copilot + ChatGPT for faster development and documentation.
 
-# Product Engineering -- Lead Engineer & System Architect
+# Product Engineering -- Lead Engineer
 
 Lead Engineer & System Architect -- SalonMind
 
