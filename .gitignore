@@ -35,7 +35,7 @@ public/resume.pdf
 # Documentation & media - keep out of repo, except docs folder and root README
 *.md
 !README.md
-!docs/**/*.md
+docs/**/*.md
 *.pdf
 
 # CI workflows
