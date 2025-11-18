@@ -29,14 +29,15 @@ dist-ssr
 *.sw?
 
 # Personal files - keep resume private
-docs
-.github
+*.docx
+public/resume.pdf
 
-# Documentation & media - keep out of repo
+# Documentation & media - keep out of repo, except docs folder and root README
 *.md
 !README.md
+!docs/**/*.md
 *.pdf
-.docs
+
 # CI workflows
 .github/workflows
 
