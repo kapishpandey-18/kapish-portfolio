@@ -1,4 +1,5 @@
 import Seo from "../components/Seo";
+import Contact from "../components/Contact";
 
 export default function ExperiencePage() {
   return (
@@ -332,6 +333,7 @@ export default function ExperiencePage() {
           </div>
         </section>
       </article>
+      <Contact />
     </>
   );
 }

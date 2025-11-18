@@ -1,6 +1,10 @@
 import { profile } from "../data/profile";
 import { useState } from "react";
 
+const FORMSPREE_ENDPOINT =
+  (import.meta.env.VITE_FORMSPREE_ENDPOINT && import.meta.env.VITE_FORMSPREE_ENDPOINT.trim()) ||
+  "https://formspree.io/f/mnnwjqwv";
+
 export default function Contact() {
   const [formStatus, setFormStatus] = useState("idle"); // idle | loading | success | error
   const [errors, setErrors] = useState({});
@@ -39,16 +43,13 @@ export default function Contact() {
     setFormStatus("loading");
 
     try {
-      const response = await fetch(
-        import.meta.env.VITE_FORMSPREE_ENDPOINT || "https://formspree.io/f/mwkgoqel",
-        {
-          method: "POST",
-          body: formData,
-          headers: {
-            Accept: "application/json",
-          },
-        }
-      );
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
 
       if (response.ok) {
         setFormStatus("success");
