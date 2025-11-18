@@ -1,9 +1,7 @@
 import { profile } from "../data/profile";
 import { useState } from "react";
 
-const FORMSPREE_ENDPOINT =
-  (import.meta.env.VITE_FORMSPREE_ENDPOINT && import.meta.env.VITE_FORMSPREE_ENDPOINT.trim()) ||
-  "https://formspree.io/f/mnnwjqwv";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mnnwjqwv";
 
 export default function Contact() {
   const [formStatus, setFormStatus] = useState("idle"); // idle | loading | success | error
