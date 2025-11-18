@@ -35,9 +35,8 @@ public/resume.pdf
 # Documentation & media - keep out of repo
 *.md
 !README.md
-!docs/**/*.md
 *.pdf
-
+*.docs
 # CI workflows
 .github/workflows
 
