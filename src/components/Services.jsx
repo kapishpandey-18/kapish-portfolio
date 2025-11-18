@@ -1,44 +1,44 @@
 export default function Services() {
   const items = [
     {
-      title: "React Frontend (Tailwind + Vite)",
-      details: "Pixel-perfect UI, dashboards, landing pages, component libraries.",
-      icon: "⚛️",
+      title: "Senior Full-Stack (React + Node)",
+      details: "System design, clean REST contracts, scalable workflows, RBAC.",
+      icon: "🧭",
     },
     {
-      title: "Node.js + MongoDB APIs",
-      details: "Auth, CRUD, payments, analytics; clean REST contracts & docs.",
-      icon: "🚀",
-    },
-    {
-      title: "SDK Development",
-      details: "Class-based SDKs, custom headers/auth, error callbacks, multi-env config.",
+      title: "SDK Engineering",
+      details: "Modular auth/events/logging/analytics, multi-env config, partner-friendly docs.",
       icon: "📦",
     },
     {
-      title: "Product Design (Figma)",
-      details: "Wireframes, design systems, clickable prototypes, developer handoff.",
+      title: "Mobile (React + Capacitor)",
+      details: "Android/iOS parity, offline/online states, proof uploads, OTP auth.",
+      icon: "📱",
+    },
+    {
+      title: "Product Engineering",
+      details: "0 → 1 flows, UX writing, edge cases, north-star to incremental delivery.",
+      icon: "🎯",
+    },
+    {
+      title: "Testing & Quality",
+      details: "Playwright E2E, Postman API suites, regression strategy, staging hardening.",
+      icon: "🧪",
+    },
+    {
+      title: "Design Systems (Figma)",
+      details: "Wireframes, prototypes, reusable UI kits, developer handoff.",
       icon: "🎨",
-    },
-    {
-      title: "Automation & AI",
-      details: "Content pipelines, Instagram/WhatsApp posting, Google Drive workflows.",
-      icon: "🤖",
-    },
-    {
-      title: "System Design",
-      details: "Scalable architectures, database schema design, API contracts, microservices.",
-      icon: "🏗️",
     },
   ];
   return (
     <section id="services" className="mx-auto max-w-6xl px-4 py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
-          Services
+          How I Can Help
         </h2>
         <p className="mt-3 text-neutral-400 max-w-2xl mx-auto">
-          Solutions I deliver for startups and local businesses.
+          Aligning with my target roles and strengths from the portfolio.
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-6">

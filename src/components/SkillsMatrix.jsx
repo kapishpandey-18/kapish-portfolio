@@ -1,12 +1,13 @@
 export default function SkillsMatrix() {
   const groups = [
-    {
-      name: "Frontend",
-      skills: ["React", "Vite", "Tailwind", "TypeScript (learning)", "Capacitor"],
-    },
-    { name: "Backend", skills: ["Node.js", "Express", "MongoDB", "REST APIs", "Auth/JWT"] },
-    { name: "Dev Tools", skills: ["GitHub", "Copilot", "Vercel", "Netlify", "Figma", "Canva"] },
-    { name: "Special", skills: ["SDKs", "AdTech (JioAds)", "Design Systems", "Automation"] },
+    { name: "Languages", skills: ["JavaScript (ES6+)"] },
+    { name: "Frontend", skills: ["React.js", "Tailwind CSS", "HTML5", "CSS3"] },
+    { name: "Backend", skills: ["Node.js", "Express.js", "MongoDB", "Mongoose"] },
+    { name: "Mobile", skills: ["Capacitor (Android/iOS)", "React"] },
+    { name: "Testing & QA", skills: ["Playwright (E2E)", "Postman (API Testing)", "Regression Strategy"] },
+    { name: "Design & UX", skills: ["Figma (Wireframes/Prototypes/UI Systems)"] },
+    { name: "Dev Tools", skills: ["Git", "GitHub", "VS Code", "Android Studio", "Xcode"] },
+    { name: "Core Expertise", skills: ["SDK Development", "System Architecture", "Multi-role Workflows", "Product Engineering"] },
   ];
   return (
     <section className="mx-auto max-w-6xl px-4 py-12">
