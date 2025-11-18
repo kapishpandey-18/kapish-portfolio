@@ -185,7 +185,7 @@ export default function Contact() {
               type="text"
               required
               className="mt-2 w-full rounded-lg border border-neutral-700 bg-transparent px-4 py-3 focus:border-cyan-400 focus:outline-none"
-              placeholder="Jane Doe"
+              placeholder="Name"
               aria-invalid={Boolean(errors.name)}
               aria-describedby={errors.name ? "contact-name-error" : undefined}
             />
@@ -206,7 +206,7 @@ export default function Contact() {
               type="email"
               required
               className="mt-2 w-full rounded-lg border border-neutral-700 bg-transparent px-4 py-3 focus:border-cyan-400 focus:outline-none"
-              placeholder="you@company.com"
+              placeholder="email"
               aria-invalid={Boolean(errors.email)}
               aria-describedby={errors.email ? "contact-email-error" : undefined}
             />
