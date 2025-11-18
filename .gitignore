@@ -29,8 +29,8 @@ dist-ssr
 *.sw?
 
 # Personal files - keep resume private
-*.docx
-public/resume.pdf
+docx
+github
 
 # Documentation & media - keep out of repo
 *.md
