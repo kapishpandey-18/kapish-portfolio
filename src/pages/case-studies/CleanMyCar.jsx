@@ -1,4 +1,5 @@
 import CaseStudyLayout from "../../components/CaseStudyLayout";
+import Seo from "../../components/Seo";
 
 export default function CSCleanMyCar() {
   const sections = [
@@ -206,11 +207,18 @@ export default function CSCleanMyCar() {
   ];
 
   return (
-    <CaseStudyLayout
-      title="CleanMyCar – Daily Car Cleaning Subscription Platform"
-      subtitle="A society-based car cleaning subscription platform designed for gated complexes, enabling transparent daily cleaning tracking, proof-of-service, and automated subscription billing."
-      gradientColors="from-cyan-400 to-blue-500"
-      sections={sections}
-    />
+    <>
+      <Seo
+        title="CleanMyCar Case Study"
+        description="How Kapish Pandey built CleanMyCar, a transparent subscription platform with proof-of-service, partner tools, and Razorpay automation."
+        pathname="/case-studies/cleanmycar"
+      />
+      <CaseStudyLayout
+        title="CleanMyCar – Daily Car Cleaning Subscription Platform"
+        subtitle="A society-based car cleaning subscription platform designed for gated complexes, enabling transparent daily cleaning tracking, proof-of-service, and automated subscription billing."
+        gradientColors="from-cyan-400 to-blue-500"
+        sections={sections}
+      />
+    </>
   );
 }

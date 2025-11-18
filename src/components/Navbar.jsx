@@ -1,5 +1,17 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { PRODUCT_VISUALS_ENABLED } from "../constants/featureFlags";
+
+const NAV_LINKS = [
+  { to: "/", label: "Home" },
+  { to: "/#about", label: "About" },
+  { to: "/#projects", label: "Projects" },
+  { to: "/#services", label: "Services" },
+  { to: "/case-studies", label: "Case Studies" },
+  { to: "/experience", label: "Experience" },
+  ...(PRODUCT_VISUALS_ENABLED ? [{ to: "/products-visuals", label: "Products Visuals" }] : []),
+  { to: "/#contact", label: "Contact" },
+];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,12 +77,18 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-neutral-800/50 shadow-lg">
-      <nav className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-center">
+      <nav
+        aria-label="Primary navigation"
+        className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-center"
+      >
         {/* Mobile menu button - positioned absolutely on the right */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden absolute right-4 flex flex-col gap-1 w-6 h-5 justify-center"
-          aria-label="Toggle menu"
+          aria-label="Toggle main navigation"
+          aria-controls="mobile-navigation"
+          aria-expanded={isMenuOpen}
+          aria-haspopup="true"
         >
           <span
             className={`block h-0.5 w-full bg-neutral-100 transition-transform ${
@@ -90,16 +108,8 @@ export default function Navbar() {
         </button>
 
         {/* Desktop menu */}
-        <div className="hidden md:flex gap-6 text-sm">
-          {[
-            { to: "/", label: "Home" },
-            { to: "/#about", label: "About" },
-            { to: "/#projects", label: "Projects" },
-            { to: "/#services", label: "Services" },
-            { to: "/case-studies", label: "Case Studies" },
-            { to: "/experience", label: "Experience" },
-            { to: "/#contact", label: "Contact" },
-          ].map((link) => (
+        <div id="primary-navigation" className="hidden md:flex gap-6 text-sm" role="menubar">
+          {NAV_LINKS.map((link) => (
             <Link
               key={link.to}
               to={link.to}
@@ -109,6 +119,7 @@ export default function Navbar() {
                   ? "text-white border-b-2 border-blue-500"
                   : "text-neutral-300 hover:text-blue-500")
               }
+              aria-current={isActive(link.to) ? "page" : undefined}
             >
               {link.label}
             </Link>
@@ -118,64 +129,23 @@ export default function Navbar() {
 
       {/* Mobile menu dropdown */}
       {isMenuOpen && (
-        <div className="md:hidden border-t border-neutral-800/50 bg-slate-900/95 backdrop-blur-md">
+        <div
+          id="mobile-navigation"
+          className="md:hidden border-t border-neutral-800/50 bg-slate-900/95 backdrop-blur-md"
+          role="menu"
+        >
           <div className="px-4 py-3 flex flex-col gap-3 text-sm">
-            <Link
-              to="/"
-              onClick={() => setIsMenuOpen(false)}
-              className="hover:text-blue-500 transition-colors py-2"
-            >
-              Home
-            </Link>
-            <Link
-              to="/#about"
-              onClick={() => setIsMenuOpen(false)}
-              className="hover:text-blue-500 transition-colors py-2"
-            >
-              About
-            </Link>
-            <Link
-              to="/#projects"
-              onClick={() => setIsMenuOpen(false)}
-              className="hover:text-blue-500 transition-colors py-2"
-            >
-              Projects
-            </Link>
-            <Link
-              to="/#services"
-              onClick={() => setIsMenuOpen(false)}
-              className="hover:text-blue-500 transition-colors py-2"
-            >
-              Services
-            </Link>
-            <Link
-              to="/case-studies"
-              onClick={() => setIsMenuOpen(false)}
-              className="hover:text-blue-500 transition-colors py-2"
-            >
-              Case Studies
-            </Link>
-            <Link
-              to="/experience"
-              onClick={() => setIsMenuOpen(false)}
-              className="hover:text-blue-500 transition-colors py-2"
-            >
-              Experience
-            </Link>
-            <Link
-              to="/products-visuals"
-              onClick={() => setIsMenuOpen(false)}
-              className="hover:text-blue-500 transition-colors py-2"
-            >
-              Products Visuals
-            </Link>
-            <Link
-              to="/#contact"
-              onClick={() => setIsMenuOpen(false)}
-              className="hover:text-blue-500 transition-colors py-2"
-            >
-              Contact
-            </Link>
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={() => setIsMenuOpen(false)}
+                className="hover:text-blue-500 transition-colors py-2"
+                role="menuitem"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
       )}

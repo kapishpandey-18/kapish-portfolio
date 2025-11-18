@@ -5,6 +5,20 @@ export const SITE_CONFIG = {
   url: "https://kapishpandey.com", // Update with your actual domain
   author: "Kapish Pandey",
   email: "contact@kapishpandey.com", // Update with your actual email
+  description:
+    "Kapish Pandey is a product-focused full stack engineer crafting delightful SaaS, marketplace, and consumer experiences end-to-end.",
+  keywords: [
+    "Kapish Pandey",
+    "full stack engineer",
+    "product engineer",
+    "React developer",
+    "Node.js developer",
+    "UI/UX",
+    "SaaS",
+    "portfolio",
+  ],
+  defaultImage: "/myworld.jpg",
+  twitterHandle: "@kapishpandey",
   social: {
     github: "https://github.com/kapishpandey-18",
     linkedin: "https://linkedin.com/in/kapishpandey",

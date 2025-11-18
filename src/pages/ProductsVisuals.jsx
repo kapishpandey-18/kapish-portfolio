@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { productVisuals } from "../data/productVisuals";
+import Seo from "../components/Seo";
 
 function ImagesGrid({ list, slug }) {
   return (
@@ -86,17 +87,25 @@ Category.propTypes = {
 
 export default function ProductsVisualsPage() {
   return (
-    <article className="mx-auto max-w-6xl px-4 py-12">
-      <h1 className="text-3xl font-semibold">Products Visuals</h1>
-      <p className="mt-2 text-neutral-400 max-w-3xl">
-        View designs across <strong>Mobile</strong>, <strong>Tablet</strong>, and{" "}
-        <strong>Desktop</strong>. Replace placeholders under <code>public/assets/products/*</code>.
-      </p>
-      <div className="mt-8 space-y-8">
-        {productVisuals.map((item) => (
-          <Category key={item.slug} item={item} />
-        ))}
-      </div>
-    </article>
+    <>
+      <Seo
+        title="Product Visual Systems"
+        description="Explore Kapish Pandey's responsive product visuals across mobile, tablet, and desktop canvases."
+        pathname="/products-visuals"
+      />
+      <article className="mx-auto max-w-6xl px-4 py-12">
+        <h1 className="text-3xl font-semibold">Products Visuals</h1>
+        <p className="mt-2 text-neutral-400 max-w-3xl">
+          View designs across <strong>Mobile</strong>, <strong>Tablet</strong>, and{" "}
+          <strong>Desktop</strong>. Replace placeholders under <code>public/assets/products/*</code>
+          .
+        </p>
+        <div className="mt-8 space-y-8">
+          {productVisuals.map((item) => (
+            <Category key={item.slug} item={item} />
+          ))}
+        </div>
+      </article>
+    </>
   );
 }

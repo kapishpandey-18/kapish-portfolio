@@ -48,6 +48,7 @@ import { createRoot } from "react-dom/client";
 // IMPORT 3: React Router - Client-Side Navigation
 // ============================================================================
 import { BrowserRouter } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 //
 // WHY: By default, clicking links reloads the entire page
 //      BrowserRouter enables Single Page Application (SPA) behavior
@@ -158,8 +159,9 @@ createRoot(document.getElementById("root"))
 
       {/* WRAPPER 2: BrowserRouter (Enables Routing) */}
       {/* ---------------------------------------------------------------------- */}
-      <BrowserRouter>
-        {/*
+      <HelmetProvider>
+        <BrowserRouter>
+          {/*
         WHAT IT DOES:
         - Wraps your app to enable client-side routing
         - Listens to URL changes
@@ -192,10 +194,10 @@ createRoot(document.getElementById("root"))
         - Without this wrapper, routing features would fail
       */}
 
-        {/* WRAPPER 3: Container Div with Styling */}
-        {/* ---------------------------------------------------------------------- */}
-        <div className="min-h-screen text-neutral-100">
-          {/*
+          {/* WRAPPER 3: Container Div with Styling */}
+          {/* ---------------------------------------------------------------------- */}
+          <div className="min-h-screen text-neutral-100">
+            {/*
           WHAT IT DOES:
           - Provides full-height background
           - Sets default text color for entire app
@@ -210,10 +212,10 @@ createRoot(document.getElementById("root"))
           - Sets baseline text color (children can override)
         */}
 
-          {/* YOUR ACTUAL APPLICATION */}
-          {/* ---------------------------------------------------------------------- */}
-          <App />
-          {/*
+            {/* YOUR ACTUAL APPLICATION */}
+            {/* ---------------------------------------------------------------------- */}
+            <App />
+            {/*
           THIS IS YOUR APP!
           
           WHAT HAPPENS HERE:
@@ -260,8 +262,9 @@ createRoot(document.getElementById("root"))
           - Updates only what changed (super efficient!)
           - You don't manually update HTML - React does it automatically
         */}
-        </div>
-      </BrowserRouter>
+          </div>
+        </BrowserRouter>
+      </HelmetProvider>
     </React.StrictMode>
   );
 

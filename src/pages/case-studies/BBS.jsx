@@ -1,4 +1,5 @@
 import CaseStudyLayout from "../../components/CaseStudyLayout";
+import Seo from "../../components/Seo";
 
 export default function CSBBS() {
   const sections = [
@@ -203,11 +204,18 @@ export default function CSBBS() {
   ];
 
   return (
-    <CaseStudyLayout
-      title="SalonMind – AI-Powered Salon Management Platform"
-      subtitle="An AI-powered salon management SaaS platform designed to digitalize daily salon operations, centralizing appointments, billing, memberships, and analytics into one smart ecosystem."
-      gradientColors="from-blue-400 to-purple-500"
-      sections={sections}
-    />
+    <>
+      <Seo
+        title="SalonMind Case Study"
+        description="How Kapish Pandey built SalonMind, a multi-tenant salon SaaS with CRM automation, billing, inventory, and AI insights."
+        pathname="/case-studies/bbs"
+      />
+      <CaseStudyLayout
+        title="SalonMind – AI-Powered Salon Management Platform"
+        subtitle="An AI-powered salon management SaaS platform designed to digitalize daily salon operations, centralizing appointments, billing, memberships, and analytics into one smart ecosystem."
+        gradientColors="from-blue-400 to-purple-500"
+        sections={sections}
+      />
+    </>
   );
 }

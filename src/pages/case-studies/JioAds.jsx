@@ -1,4 +1,5 @@
 import CaseStudyLayout from "../../components/CaseStudyLayout";
+import Seo from "../../components/Seo";
 
 export default function CSJioAds() {
   const sections = [
@@ -211,11 +212,18 @@ export default function CSJioAds() {
   ];
 
   return (
-    <CaseStudyLayout
-      title="JioAds – Enterprise Advertising & Monetization SDK Platform"
-      subtitle="An enterprise-grade advertising and monetization SDK ecosystem built for high-volume apps across Android, iOS, Web, and Smart Devices, enabling targeted campaigns and programmatic advertising."
-      gradientColors="from-purple-400 to-pink-500"
-      sections={sections}
-    />
+    <>
+      <Seo
+        title="JioAds Case Study"
+        description="Inside JioAds—Kapish Pandey's enterprise ad SDK for low-latency delivery, device parity, and deep analytics."
+        pathname="/case-studies/jioads"
+      />
+      <CaseStudyLayout
+        title="JioAds – Enterprise Advertising & Monetization SDK Platform"
+        subtitle="An enterprise-grade advertising and monetization SDK ecosystem built for high-volume apps across Android, iOS, Web, and Smart Devices, enabling targeted campaigns and programmatic advertising."
+        gradientColors="from-purple-400 to-pink-500"
+        sections={sections}
+      />
+    </>
   );
 }

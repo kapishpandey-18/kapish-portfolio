@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Seo from "../../components/Seo";
 
 export default function CaseStudiesIndex() {
   const cards = [
@@ -22,26 +23,33 @@ export default function CaseStudiesIndex() {
     },
   ];
   return (
-    <section className="mx-auto max-w-6xl px-4 py-12 min-h-screen">
-      <h1 className="text-2xl md:text-3xl font-semibold">Case Studies</h1>
-      <p className="mt-2 text-neutral-400 max-w-3xl">
-        Deep dives into product challenges, architecture, solutions, and outcomes.
-      </p>
-      <div className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {cards.map((c) => (
-          <Link
-            key={c.to}
-            to={c.to}
-            className="card-overlay rounded-xl p-5 block hover:scale-105 transition-transform"
-          >
-            <p className="font-medium">{c.title}</p>
-            <p className="mt-2 text-neutral-300 text-sm">{c.blurb}</p>
-            <span className="mt-3 inline-block text-sm underline underline-offset-4 text-cyan-400">
-              Read case study →
-            </span>
-          </Link>
-        ))}
-      </div>
-    </section>
+    <>
+      <Seo
+        title="Case Studies"
+        description="Detailed write-ups on SalonMind, CleanMyCar, and JioAds covering product strategy, architecture, and measurable outcomes."
+        pathname="/case-studies"
+      />
+      <section className="mx-auto max-w-6xl px-4 py-12 min-h-screen">
+        <h1 className="text-2xl md:text-3xl font-semibold">Case Studies</h1>
+        <p className="mt-2 text-neutral-400 max-w-3xl">
+          Deep dives into product challenges, architecture, solutions, and outcomes.
+        </p>
+        <div className="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {cards.map((c) => (
+            <Link
+              key={c.to}
+              to={c.to}
+              className="card-overlay rounded-xl p-5 block hover:scale-105 transition-transform"
+            >
+              <p className="font-medium">{c.title}</p>
+              <p className="mt-2 text-neutral-300 text-sm">{c.blurb}</p>
+              <span className="mt-3 inline-block text-sm underline underline-offset-4 text-cyan-400">
+                Read case study →
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }

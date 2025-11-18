@@ -57,7 +57,8 @@ export default function Contact() {
       } else {
         setFormStatus("error");
       }
-    } catch (error) {
+    } catch (err) {
+      console.error("Contact form submission failed", err);
       setFormStatus("error");
     }
   };
@@ -168,6 +169,96 @@ export default function Contact() {
             </p>
           </div>
         </div>
+        <form
+          onSubmit={handleSubmit}
+          noValidate
+          className="card-overlay rounded-xl p-5 space-y-5"
+          aria-describedby="contact-form-status"
+        >
+          <h3 className="text-lg font-semibold text-blue-500">Send a Message</h3>
+          <div>
+            <label htmlFor="contact-name" className="text-sm font-medium text-neutral-200">
+              Name
+            </label>
+            <input
+              id="contact-name"
+              name="name"
+              type="text"
+              required
+              className="mt-2 w-full rounded-lg border border-neutral-700 bg-transparent px-4 py-3 focus:border-cyan-400 focus:outline-none"
+              placeholder="Jane Doe"
+              aria-invalid={Boolean(errors.name)}
+              aria-describedby={errors.name ? "contact-name-error" : undefined}
+            />
+            {errors.name && (
+              <p id="contact-name-error" className="mt-1 text-sm text-red-400">
+                {errors.name}
+              </p>
+            )}
+          </div>
+
+          <div>
+            <label htmlFor="contact-email" className="text-sm font-medium text-neutral-200">
+              Email
+            </label>
+            <input
+              id="contact-email"
+              name="email"
+              type="email"
+              required
+              className="mt-2 w-full rounded-lg border border-neutral-700 bg-transparent px-4 py-3 focus:border-cyan-400 focus:outline-none"
+              placeholder="you@company.com"
+              aria-invalid={Boolean(errors.email)}
+              aria-describedby={errors.email ? "contact-email-error" : undefined}
+            />
+            {errors.email && (
+              <p id="contact-email-error" className="mt-1 text-sm text-red-400">
+                {errors.email}
+              </p>
+            )}
+          </div>
+
+          <div>
+            <label htmlFor="contact-message" className="text-sm font-medium text-neutral-200">
+              Message
+            </label>
+            <textarea
+              id="contact-message"
+              name="message"
+              rows={5}
+              required
+              className="mt-2 w-full rounded-lg border border-neutral-700 bg-transparent px-4 py-3 focus:border-cyan-400 focus:outline-none"
+              placeholder="Tell me about your project, role, or idea."
+              aria-invalid={Boolean(errors.message)}
+              aria-describedby={errors.message ? "contact-message-error" : undefined}
+            />
+            {errors.message && (
+              <p id="contact-message-error" className="mt-1 text-sm text-red-400">
+                {errors.message}
+              </p>
+            )}
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <button
+              type="submit"
+              disabled={formStatus === "loading"}
+              className="rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 font-semibold text-white disabled:cursor-not-allowed disabled:opacity-70"
+            >
+              {formStatus === "loading" ? "Sending..." : "Send Message"}
+            </button>
+            <p id="contact-form-status" role="status" aria-live="polite" className="text-sm">
+              {formStatus === "success" && (
+                <span className="text-green-400">Thanks! I’ll reply within 24 hours.</span>
+              )}
+              {formStatus === "error" && (
+                <span className="text-red-400">
+                  Something went wrong. Please try again or email me directly.
+                </span>
+              )}
+            </p>
+          </div>
+        </form>
       </div>
     </section>
   );

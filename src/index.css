@@ -36,6 +36,31 @@ body::before {
   z-index: 1;
 }
 
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.95);
+  color: #f8fafc;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.25);
+  transform: translateY(-200%);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  z-index: 999;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+  box-shadow: 0 15px 40px rgba(59, 130, 246, 0.35);
+  outline: 2px solid rgba(59, 130, 246, 0.6);
+  outline-offset: 4px;
+}
+
 /* Card overlay effects */
 .card-overlay {
   position: relative;

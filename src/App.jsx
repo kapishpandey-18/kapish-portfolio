@@ -9,6 +9,9 @@ import SkillsMatrix from "./components/SkillsMatrix";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ErrorBoundary from "./components/ErrorBoundary";
+import SkipToContent from "./components/SkipToContent";
+import Seo from "./components/Seo";
+import { PRODUCT_VISUALS_ENABLED } from "./constants/featureFlags";
 
 // Lazy load pages for better performance
 const CaseStudiesIndex = lazy(() => import("./pages/case-studies/Index.jsx"));
@@ -17,6 +20,10 @@ const CSCleanMyCar = lazy(() => import("./pages/case-studies/CleanMyCar.jsx"));
 const CSJioAds = lazy(() => import("./pages/case-studies/JioAds.jsx"));
 const ExperiencePage = lazy(() => import("./pages/Experience.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound.jsx"));
+
+const ProductsVisualsPage = PRODUCT_VISUALS_ENABLED
+  ? lazy(() => import("./pages/ProductsVisuals.jsx"))
+  : null;
 
 // Loading component
 function LoadingSpinner() {
@@ -44,6 +51,11 @@ function Home() {
 
   return (
     <>
+      <Seo
+        title="Product-Focused Full Stack Engineer"
+        description="Portfolio of Kapish Pandey—building zero-to-one SaaS, fintech, and marketplace products with React, Node.js, and thoughtful UX."
+        pathname="/"
+      />
       <Hero />
       <About />
       <Projects />
@@ -58,8 +70,9 @@ export default function App() {
   return (
     <ErrorBoundary>
       <div className="min-h-screen flex flex-col">
+        <SkipToContent />
         <Navbar />
-        <main className="flex-1">
+        <main id="main-content" className="flex-1" tabIndex={-1}>
           <Suspense fallback={<LoadingSpinner />}>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -68,6 +81,9 @@ export default function App() {
               <Route path="/case-studies/cleanmycar" element={<CSCleanMyCar />} />
               <Route path="/case-studies/jioads" element={<CSJioAds />} />
               <Route path="/experience" element={<ExperiencePage />} />
+              {PRODUCT_VISUALS_ENABLED && (
+                <Route path="/products-visuals" element={<ProductsVisualsPage />} />
+              )}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

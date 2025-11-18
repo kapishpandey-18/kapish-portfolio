@@ -218,6 +218,54 @@ const ExperiencePage = lazy(() => import("./pages/Experience.jsx"));
 
 ---
 
+### 9. Accessibility Enhancements ✓
+
+**Updates:**
+
+- Added global `SkipToContent` component + styling for keyboard users
+- Enhanced `Navbar` with ARIA attributes, consistent link set, and better toggle semantics
+- Ensured `<main>` is focusable and identifiable via `id="main-content"`
+
+**Impact:**
+
+- Improved keyboard navigation and focus management
+- Better screen reader experience with descriptive navigation metadata
+- Reduced friction for assistive technologies
+
+---
+
+### 10. SEO Metadata Foundation ✓
+
+**Updates:**
+
+- Introduced `react-helmet-async` with a reusable `Seo` component
+- Added per-route metadata (home, experience, case studies, products visuals, 404)
+- Centralized site metadata in `SITE_CONFIG` (description, keywords, default image)
+
+**Impact:**
+
+- Search engines receive accurate titles/descriptions per page
+- Social shares show rich previews via OG/Twitter tags
+- Future pages can add SEO in a single line
+
+---
+
+### 11. Testing Baseline ✓
+
+**Updates:**
+
+- Added Vitest + React Testing Library stack with jsdom environment
+- Configured scripts `npm run test` / `npm run test:watch`
+- Created initial `Projects` component test covering data-driven rendering
+
+**Impact:**
+
+- Provides foundation for future unit and integration tests
+- Ensures critical sections render expected content
+- Encourages test-driven enhancements going forward
+
+---
+
 ## 📊 Comparison: Before vs After
 
 ### Code Organization
@@ -281,6 +329,18 @@ const ExperiencePage = lazy(() => import("./pages/Experience.jsx"));
 - Add keyboard navigation improvements
 - Add screen reader announcements
 - Add ARIA live regions
+
+---
+
+## 🗓️ November 2025 Improvement Plan
+
+| Focus Area     | Actions (in progress)                                                |
+| -------------- | -------------------------------------------------------------------- |
+| Accessibility  | Add skip-navigation link, strengthen ARIA labels, improve section UX |
+| SEO/Metadata   | Introduce `react-helmet-async`, define per-page titles & descriptions |
+| Testing        | Bootstrap Vitest + React Testing Library with starter component spec |
+
+These upgrades directly address the outstanding best-practice gaps identified after the October refactor. Each item will be implemented alongside documentation updates so the rationale and verification steps stay discoverable.
 
 ---
 
