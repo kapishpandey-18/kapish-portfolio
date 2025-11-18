@@ -30,12 +30,11 @@ dist-ssr
 
 # Personal files - keep resume private
 *.docx
-public/resume.pdf
 
 # Documentation & media - keep out of repo, except docs folder and root README
 *.md
 !README.md
-docs/**/*.md
+docs
 *.pdf
 
 # CI workflows
