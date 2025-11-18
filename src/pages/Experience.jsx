@@ -108,7 +108,7 @@ export default function ExperiencePage() {
                 d="M13 10V3L4 14h7v7l9-11h-7z"
               />
             </svg>
-            Product Engineering & Entrepreneurial Projects
+            Product Engineering Projects
           </h2>
 
           <div className="space-y-6">
@@ -190,7 +190,7 @@ export default function ExperiencePage() {
                   MyCar Platform — Car Cleaning Subscription Service
                 </h3>
                 <span className="text-xs bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full">
-                  System Architect
+                  Lead Engineer
                 </span>
               </div>
               <p className="text-neutral-400 mb-3">
