@@ -32,6 +32,14 @@ dist-ssr
 *.docx
 public/resume.pdf
 
-# Documentation - keep only essential README tracked
+# Documentation & media - keep out of repo
 *.md
-!README.md
+*.pdf
+
+# CI workflows
+.github/workflows
+
+# Tests
+**/__tests__/
+**/*.test.*
+**/*.spec.*
