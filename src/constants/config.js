@@ -1,10 +1,11 @@
 // Site configuration
+// deepseek api key : sk-fd40df09563d44e291cc62a282d0ff1f
 export const SITE_CONFIG = {
   name: "Kapish Portfolio",
   tagline: "Full Stack Developer & UI/UX Enthusiast",
   url: "https://kapishpandey.com", // Update with your actual domain
   author: "Kapish Pandey",
-  email: "contact@kapishpandey.com", // Update with your actual email
+  email: "kapish.p03@gmail.com", // Update with your actual email
   description:
     "Kapish Pandey is a product-focused full stack engineer crafting delightful SaaS, marketplace, and consumer experiences end-to-end.",
   keywords: [

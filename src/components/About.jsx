@@ -1,5 +1,3 @@
-import { profile } from "../data/profile";
-
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-4 py-16">

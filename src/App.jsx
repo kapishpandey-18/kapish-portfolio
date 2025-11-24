@@ -19,6 +19,7 @@ const CSBBS = lazy(() => import("./pages/case-studies/BBS.jsx"));
 const CSCleanMyCar = lazy(() => import("./pages/case-studies/CleanMyCar.jsx"));
 const CSJioAds = lazy(() => import("./pages/case-studies/JioAds.jsx"));
 const ExperiencePage = lazy(() => import("./pages/Experience.jsx"));
+const DsaPage = lazy(() => import("./pages/Dsa.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 
 const ProductsVisualsPage = PRODUCT_VISUALS_ENABLED
@@ -81,6 +82,7 @@ export default function App() {
               <Route path="/case-studies/cleanmycar" element={<CSCleanMyCar />} />
               <Route path="/case-studies/jioads" element={<CSJioAds />} />
               <Route path="/experience" element={<ExperiencePage />} />
+              <Route path="/dsa" element={<DsaPage />} />
               {PRODUCT_VISUALS_ENABLED && (
                 <Route path="/products-visuals" element={<ProductsVisualsPage />} />
               )}
