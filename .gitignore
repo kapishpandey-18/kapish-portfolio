@@ -28,15 +28,14 @@ dist-ssr
 *.sln
 *.sw?
 
-# Personal files - keep resume private
-*.docx
-public/resume.pdf
-
 # Documentation & media - keep out of repo, except docs folder and root README
 *.md
 !README.md
 docs/**/*.md
-*.pdf
+
+# Exclude resume source files but INCLUDE public/resume.pdf for deployment
+*.docx
+# Note: public/resume.pdf is intentionally NOT ignored so it deploys to production
 
 # CI workflows
 .github/workflows
