@@ -252,13 +252,6 @@ export default function ExperiencePage() {
             >
               Download PDF
             </a>
-            <a
-              href="/resume.docx"
-              download
-              className="px-4 py-2 rounded-lg border border-purple-500/50 text-purple-300 hover:bg-purple-500/10 transition-colors"
-            >
-              Download DOCX
-            </a>
           </div>
         </section>
       </article>
