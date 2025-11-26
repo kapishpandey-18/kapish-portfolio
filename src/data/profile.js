@@ -4,10 +4,11 @@ export const profile = {
   location: "Gurgaon, Haryana",
   phone: "+91 8073820914",
   email: "kapish.p03@gmail.com",
-  github: "https://github.com/kapish2025",
+  github: "https://github.com/kapishpandey-18",
   linkedin: "https://www.linkedin.com/in/kapish-pandey",
+  portfolio: "https://kapish-portfolio-sable.vercel.app/",
   summary:
-    "Senior Software Engineer with 8+ years building scalable SDKs, full-stack applications, mobile apps (Android/iOS via Capacitor), and complete product architectures. I take ideas from 0 → 1: system design, UI/UX, backend workflows, mobile apps, and automation.",
+    "Senior Software Engineer with 7+ years building scalable SDKs, full-stack applications, mobile apps (Android/iOS via Capacitor), and complete product architectures. I take ideas from 0 → 1: system design, UI/UX, backend workflows, mobile apps, and automation.",
   skills: [
     "JavaScript (ES6+)",
     "React.js",

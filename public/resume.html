@@ -1,9 +1,16 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Kapish Pandey - Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       @page {
         margin: 0.5in;
         @top-left {
@@ -25,214 +32,324 @@
           content: none;
         }
       }
+
       body {
         font-family: Arial, sans-serif;
         font-size: 10.5pt;
-        line-height: 1.5;
+        line-height: 1.6;
         color: #000;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 0.5in;
       }
+
+      .resume-container {
+        width: 100%;
+      }
+
+      .header-section {
+        margin-bottom: 20pt;
+      }
+
       h1 {
-        font-size: 18pt;
+        font-size: 20pt;
         font-weight: bold;
-        margin: 0 0 4pt 0;
+        margin-bottom: 8pt;
         text-align: left;
         letter-spacing: 0.5pt;
+        color: #000;
       }
+
+      .contact-info {
+        margin-top: 8pt;
+        margin-bottom: 16pt;
+        line-height: 1.5;
+      }
+
+      .contact-info p {
+        margin: 4pt 0;
+        text-align: left;
+      }
+
+      .resume-section {
+        margin-bottom: 20pt;
+        page-break-inside: avoid;
+      }
+
       h2 {
         font-size: 13pt;
         font-weight: bold;
-        margin: 14pt 0 8pt 0;
-        padding-bottom: 3pt;
-        border-bottom: 2px solid #000;
+        margin: 16pt 0 10pt 0;
         text-transform: uppercase;
-        letter-spacing: 0.5pt;
-        text-align: left;
+        letter-spacing: 0.8pt;
+        color: #1a1a1a;
+        border-bottom: 2pt solid #333;
+        padding-bottom: 4pt;
       }
+
+      .experience-item {
+        margin-bottom: 16pt;
+      }
+
       h3 {
         font-size: 11.5pt;
         font-weight: bold;
-        margin: 10pt 0 4pt 0;
+        margin: 12pt 0 6pt 0;
         line-height: 1.3;
-        text-align: left;
+        color: #000;
       }
-      p {
-        margin: 5pt 0;
-        text-align: justify;
+
+      h4 {
+        font-size: 10pt;
+        font-weight: bold;
+        margin: 8pt 0 4pt 0;
+        color: #333;
       }
-      ul {
+
+      .job-title {
+        font-size: 10.5pt;
+        font-weight: bold;
         margin: 6pt 0;
+      }
+
+      .date {
+        font-weight: bold;
+        font-style: italic;
+        margin: 4pt 0 8pt 0;
+      }
+
+      p {
+        margin: 6pt 0;
+        text-align: justify;
+        line-height: 1.5;
+      }
+
+      ul {
+        margin: 8pt 0;
         padding-left: 24pt;
         list-style-type: disc;
       }
+
       li {
-        margin: 3pt 0;
-        line-height: 1.4;
+        margin: 4pt 0;
+        line-height: 1.5;
+        text-align: justify;
       }
-      hr {
-        border: none;
-        border-top: 1px solid #ddd;
-        margin: 10pt 0;
-      }
+
       strong {
         font-weight: bold;
+        color: #000;
       }
-      a {
-        color: #0066cc;
-        text-decoration: none;
+
+      .skills-section p {
+        margin: 8pt 0;
+        text-align: left;
       }
-      .contact-info {
-        text-align: center;
-        margin: 6pt 0 14pt 0;
-        font-size: 10pt;
-        line-height: 1.4;
-      }
-      /* Ensure consistent spacing */
-      section {
-        margin-bottom: 12pt;
-      }
-      /* Better bullet alignment */
-      ul li p {
-        margin: 0;
-        display: inline;
-      }
-      /* Section-wise divs styling */
-      .resume-section {
-        margin-bottom: 16pt;
-        page-break-inside: avoid;
-      }
-      .resume-header {
-        margin-bottom: 16pt;
-      }
+
       .project-item {
-        margin-bottom: 14pt;
-        page-break-inside: avoid;
+        margin-bottom: 16pt;
+      }
+
+      h4 {
+        text-align: left;
+      }
+
+      .tech-stack {
+        font-weight: bold;
+        font-style: italic;
+        margin: 4pt 0 8pt 0;
+        color: #333;
+        text-align: left;
+      }
+
+      @media print {
+        body {
+          padding: 0;
+        }
+        .resume-section {
+          page-break-inside: avoid;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="resume-container"><h1 id="kapish-pandey"><strong>KAPISH
-PANDEY</strong></h1>
-<p><strong>Role:</strong> Senior Software Engineer (Full Stack / Web
-SDKs)<br />
-<strong>Experience:</strong> 7.8+ years<br />
-<strong>Location:</strong> Gurgaon, India<br />
-<strong>Email:</strong> kapish.p03@gmail.com<br />
-<strong>Phone:</strong> +91-8073820914<br />
-<strong>LinkedIn:</strong> https://linkedin.com/in/kapishpandey<br />
-<strong>GitHub:</strong> https://github.com/kapishpandey-18<br />
-<strong>Portfolio:</strong>
-https://kapish-portfolio-sable.vercel.app/</p>
-<hr />
-<h2 id="summary"><strong>SUMMARY</strong></h2>
-<p>Senior Software Engineer with 7.8+ years of experience building
-scalable SDKs, web applications, and backend systems. Strong background
-in <strong>JavaScript/TypeScript</strong>, <strong>React</strong>,
-<strong>Node.js</strong>, <strong>MongoDB</strong>, and <strong>system
-design</strong>. Proven track record of shipping real-world products
-like <strong>JioAds SDK</strong>, <strong>SalonMind</strong>, and
-<strong>CleanMyCar</strong>. Passionate about building clean, optimized
-systems and full-stack architectures.</p>
-<hr />
-<h2 id="skills"><strong>SKILLS</strong></h2>
-<ul>
-<li><strong>Languages:</strong> JavaScript, TypeScript, HTML, CSS</li>
-<li><strong>Frontend:</strong> React, Next.js (Basic), Tailwind CSS</li>
-<li><strong>Backend:</strong> Node.js, Express.js, REST APIs</li>
-<li><strong>Databases:</strong> MongoDB</li>
-<li><strong>Tools:</strong> Git, GitHub, Vercel, Figma, Pandoc</li>
-<li><strong>Concepts:</strong> DSA, System Design, Design Patterns, Web
-SDK Architecture</li>
-</ul>
-<hr />
-<h1 id="experience"><strong>EXPERIENCE</strong></h1>
-<h2 id="senior-software-engineer-jio-via-quest-global"><strong>Senior
-Software Engineer – Jio (via Quest Global)</strong></h2>
-<p><strong>Mar 2018 – Present | Mumbai / Remote</strong></p>
-<ul>
-<li>Designed, developed, and maintained the <strong>JioAds Web
-SDK</strong>, consumed across major Jio platforms.</li>
-<li>Improved SDK load performance through caching, reducing ad latency
-significantly.</li>
-<li>Implemented secure configuration handling, authentication flows, and
-fail-safe fallbacks.</li>
-<li>Collaborated with product, QA, and business teams to deploy stable
-SDK releases.</li>
-</ul>
-<p><strong>Key Achievements:</strong></p>
-<ul>
-<li>Reduced SDK integration time for publishers by X%.</li>
-<li>Improved event tracking reliability and error-reporting
-coverage.</li>
-<li>Strengthened cross-team communication around SDK releases.</li>
-<li>Contributed to internal tools that improved debugging &amp; partner
-onboarding.</li>
-</ul>
-<hr />
-<h1 id="projects"><strong>PROJECTS</strong></h1>
-<h2 id="jioads-web-sdk-ad-delivery-sdk-production"><strong>JioAds Web
-SDK – Ad Delivery SDK (Production)</strong></h2>
-<p>JavaScript SDK used across Jio’s ecosystem.</p>
-<p><strong>Tech:</strong> JavaScript, TypeScript, Web SDK
-Architecture</p>
-<p><strong>Key Contributions:</strong></p>
-<ul>
-<li>Built SDK events: impressions, clicks, rendering logs, and error
-telemetry.</li>
-<li>Implemented <strong>config fetching, retry logic, network
-optimization</strong>, and fallback strategies.</li>
-<li>Integrated SDK across multiple websites improving partner
-adoption.</li>
-<li>Added validation for publisher config and improved debugging
-experience.</li>
-</ul>
-<hr />
-<h2 id="salonmind-salon-management-saas-in-progress"><strong>SalonMind —
-Salon Management SaaS (In Progress)</strong></h2>
-<p>A full SaaS platform to digitize salon operations.</p>
-<p><strong>Tech:</strong> React, Node.js, Express, MongoDB, Tailwind
-CSS</p>
-<p><strong>Key Contributions:</strong></p>
-<ul>
-<li>Designed complete <strong>PRD + system architecture + DB
-schema</strong> before development.</li>
-<li>Implemented modules for <strong>services, workers, daily tracking,
-and membership passes</strong>.</li>
-<li>Created a scalable <strong>admin portal + employee portal</strong>
-structure using modular React architecture.</li>
-<li>Built endpoints for services, authentication, incentives, and salon
-reporting workflows.</li>
-</ul>
-<hr />
-<h2
-id="cleanmycar-car-cleaning-subscription-platform-in-progress"><strong>CleanMyCar
-— Car Cleaning &amp; Subscription Platform (In Progress)</strong></h2>
-<p>A subscription-based car cleaning service for gated societies.</p>
-<p><strong>Tech:</strong> React, Node.js, MongoDB</p>
-<p><strong>Key Contributions:</strong></p>
-<ul>
-<li>Designed complete <strong>user onboarding → login → dashboard →
-booking flows</strong>.</li>
-<li>Implemented modules for <strong>subscriptions, Express Clean,
-Schedule Clean</strong>, and trial bookings.</li>
-<li>Created scalable API structure following <strong>MVC with
-controllers, services, models</strong>, and middlewares.</li>
-<li>Developed UI components for popular services, home screen cards,
-offers, and partners.</li>
-</ul>
-<hr />
-<h1 id="education"><strong>EDUCATION</strong></h1>
-<p>Master of Computer Applications — School of Management Sciences,
-Varanasi (2016)</p>
-<hr />
-<h1 id="other"><strong>OTHER</strong></h1>
-<ul>
-<li>Strong interest in building <strong>SDKs, automation tools, and
-scalable SaaS products</strong>.</li>
-<li>Experienced in managing complete product lifecycle: PRD →
-Architecture → APIs → UI.</li>
-</ul></div>
+    <div class="resume-container">
+      <div class="header-section">
+        <h1>KAPISH PANDEY</h1>
+        <div class="contact-info">
+          <p><strong>Senior Software Engineer</strong></p>
+          <p>Gurgaon, Haryana</p>
+          <p>
+            <strong>Email:</strong> kapish.p03@gmail.com | <strong>Phone:</strong> +91 8073820914
+          </p>
+          <p><strong>LinkedIn:</strong> linkedin.com/in/kapishpandey</p>
+          <p><strong>GitHub:</strong> github.com/kapishpandey-18</p>
+          <p><strong>Portfolio:</strong> kapish-portfolio-sable.vercel.app</p>
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <h2>PROFESSIONAL SUMMARY</h2>
+        <p>
+          Senior Software Engineer with <strong>7.8 years of experience</strong> in frontend
+          architecture, Web SDK development, scalable UI systems, and full-stack product
+          engineering. Built and maintained the <strong>JioAds Web & KaiOS SDK</strong> powering
+          high-traffic Jio apps. Strong expertise in
+          <strong>React, JavaScript, Node.js, MongoDB</strong>, performance optimization
+          (virtualized lists, caching, lazy rendering), and modular UI systems. Developed two
+          complete engineering POCs (<strong>SalonMind</strong>, <strong>CleanMyCar</strong>) with
+          ownership across <strong>UI/UX (Figma)</strong> →
+          <strong>Backend APIs (Node.js)</strong> → <strong>Mobile App (Capacitor)</strong> →
+          <strong>Testing (Postman, Playwright)</strong>.
+        </p>
+      </div>
+
+      <div class="resume-section skills-section">
+        <h2>CORE SKILLS</h2>
+        <p>
+          <strong>Frontend:</strong> React.js, JavaScript (ES6+), TypeScript (Basic), Vite, Tailwind
+          CSS, Next.js (Basic)
+        </p>
+        <p><strong>Backend:</strong> Node.js, Express.js, MongoDB, Mongoose</p>
+        <p><strong>Mobile:</strong> Capacitor (Android/iOS)</p>
+        <p><strong>Testing:</strong> Playwright (E2E), Postman</p>
+        <p><strong>Tools:</strong> Git, GitHub, VS Code, Android Studio, Figma</p>
+        <p>
+          <strong>Concepts:</strong> Web SDKs, Performance Optimization, System Design, Modular
+          Architecture, REST APIs
+        </p>
+      </div>
+
+      <div class="resume-section">
+        <h2>PROFESSIONAL EXPERIENCE</h2>
+
+        <div class="experience-item">
+          <h3>Senior Software Engineer — Quest Global (Client: Jio Platforms Ltd)</h3>
+          <p class="date"><strong>March 2018 – Present</strong></p>
+
+          <p class="job-title">JioAds Web + KaiOS SDK Development</p>
+          <ul>
+            <li>
+              Built & maintained <strong>JioAds Web & KaiOS SDKs</strong> used across high-traffic
+              Jio apps & partner sites.
+            </li>
+            <li>
+              Improved SDK performance by <strong>~30%</strong> using caching, batching, and
+              optimized ad-loading logic.
+            </li>
+            <li>
+              Reduced partner integration issues by <strong>~40%</strong> via structured logging,
+              fallback logic, and event-validation tools.
+            </li>
+            <li>
+              Decreased debugging time by <strong>~35%</strong> with virtualized rendering for large
+              event logs.
+            </li>
+            <li>
+              Increased SDK release stability by <strong>~50%</strong> using Playwright automation
+              for high-risk flows.
+            </li>
+            <li>
+              Boosted API validation accuracy by <strong>~25%</strong> through Postman regression
+              suites.
+            </li>
+            <li>
+              Architected modular SDK components: auth, event tracking, config loader, error
+              handling, storage, retries.
+            </li>
+            <li>
+              Collaborated with product, QA, backend, and publisher teams to optimize SDK adoption &
+              reliability.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <h2>KEY ENGINEERING PROJECTS</h2>
+
+        <div class="project-item">
+          <h3>1. SalonMind — Full SaaS Salon Management System (POC)</h3>
+          <h4>Tech Used:</h4>
+          <p class="tech-stack">React.js · Node.js · MongoDB · Tailwind CSS · Capacitor · Figma</p>
+          <ul>
+            <li>
+              Designed scalable <strong>React UI architecture</strong> with reusable components,
+              modular routing & API-driven state.
+            </li>
+            <li>
+              Improved dashboard load performance by <strong>~20%</strong> using lazy loading &
+              optimized API workflows.
+            </li>
+            <li>
+              Built <strong>30+ reusable UI components</strong>, increasing developer productivity &
+              UI consistency by <strong>~40%</strong>.
+            </li>
+            <li>
+              Developed modules: service catalog, pricing engine, commission system, payroll,
+              reports, logs, RBAC.
+            </li>
+            <li>
+              Designed complete UI/UX in <strong>Figma</strong> with scalable design tokens &
+              consistent layout patterns.
+            </li>
+            <li>Built Employee mobile app using <strong>Capacitor</strong> (Android/iOS).</li>
+            <li>
+              Created backend services for authentication, CRUD APIs, service logs, commission
+              workflows.
+            </li>
+            <li>
+              Added automation using <strong>Postman + Playwright</strong> for API and UI flows.
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-item">
+          <h3>2. CleanMyCar — Subscription + Daily Car Cleaning Platform (POC)</h3>
+          <h4>Tech Used:</h4>
+          <p class="tech-stack">React.js · Node.js · MongoDB · Capacitor · Figma</p>
+          <ul>
+            <li>
+              Developed <strong>User & Cleaner mobile apps</strong> using Capacitor with optimized
+              UX for low-end Android devices.
+            </li>
+            <li>
+              Improved app responsiveness by <strong>~30%</strong> through optimized state logic &
+              background sync.
+            </li>
+            <li>
+              Simplified booking workflow, reducing steps by <strong>~25%</strong> using improved
+              UI/UX flows (Figma).
+            </li>
+            <li>
+              Created backend APIs: subscriptions, OTP login, daily logs (with photos), cleaner
+              assignment.
+            </li>
+            <li>
+              Implemented modular React frontend with clean state management & predictable
+              API-driven flows.
+            </li>
+            <li>Designed complete cross-platform UI system in Figma.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <h2>EDUCATION</h2>
+        <p><strong>Master of Computer Applications (MCA)</strong></p>
+        <p>School of Management Sciences, Varanasi (2016)</p>
+      </div>
+
+      <div class="resume-section">
+        <h2>ADDITIONAL</h2>
+        <ul>
+          <li>Strong ability to break complex systems into scalable, modular components.</li>
+          <li>
+            Self-driven engineer with two complete product POCs delivered end-to-end:
+            <strong>PRD → Architecture → Backend → UI → Mobile → Testing</strong>.
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

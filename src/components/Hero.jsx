@@ -71,7 +71,7 @@ export default function Hero() {
 
             <a
               href="/resume.pdf"
-              download
+              download="Kapish_Pandey_Resume.pdf"
               className="px-6 py-3 rounded-lg border border-neutral-700 text-neutral-300 font-medium hover:border-purple-600 hover:text-purple-600 hover:bg-purple-600/5 transition-all duration-300"
             >
               <span className="flex items-center gap-2">

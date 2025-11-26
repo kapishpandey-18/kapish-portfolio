@@ -10,15 +10,15 @@ export default function About() {
       <div className="card-overlay rounded-xl p-8 md:p-12 max-w-4xl mx-auto">
         <div className="space-y-6 text-neutral-300 leading-relaxed">
           <p className="text-lg">
-            Senior Software Engineer with 8+ years of experience in React, Node.js, MongoDB, SDK
+            Senior Software Engineer with 7+ years of experience in React, Node.js, MongoDB, SDK
             engineering, and mobile apps using Capacitor. I build full products end-to-end —
             architecture, backend, UI/UX, mobile, and testing.
           </p>
 
           <p>
-            I’ve created engineering POCs like{" "}
+            I've created engineering POCs like{" "}
             <span className="text-blue-400 font-semibold">SalonMind</span> (SaaS platform) and{" "}
-            <span className="text-cyan-400 font-semibold">MyCar</span> (subscription + mobile
+            <span className="text-cyan-400 font-semibold">CleanMyCar</span> (subscription + mobile
             ecosystem) to strengthen my skills in system design, workflows, automation, and product
             engineering.
           </p>

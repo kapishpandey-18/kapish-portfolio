@@ -35,6 +35,7 @@ docs/**/*.md
 
 # Exclude resume source files but INCLUDE public/resume.pdf for deployment
 *.docx
+resume.html
 # Note: public/resume.pdf is intentionally NOT ignored so it deploys to production
 
 # CI workflows

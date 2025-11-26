@@ -17,7 +17,7 @@ export const projects = [
     image: "/assets/salonmind-cover.svg",
   },
   {
-    title: "MyCar Platform — Car Cleaning Subscription App",
+    title: "CleanMyCar Platform — Car Cleaning Subscription App",
     period: "POC • 2024–2025",
     stack: ["React", "Node.js", "MongoDB", "Capacitor", "Figma", "Playwright", "Postman"],
     description:
@@ -29,9 +29,9 @@ export const projects = [
       "Full Figma UI/UX for all screens and flows",
       "Postman API tests; Playwright automation in progress",
     ],
-    repo: "https://github.com/kapishpandey-18/mycar",
+    repo: "https://github.com/kapishpandey-18/cleanmycar",
     live: "",
-    image: "/assets/mycar-cover.svg",
+    image: "/assets/cleanmycar-cover.svg",
   },
   {
     title: "JioAds SDK — Web & KaiOS SDK Development",

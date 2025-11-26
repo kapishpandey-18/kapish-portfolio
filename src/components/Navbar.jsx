@@ -9,7 +9,6 @@ const NAV_LINKS = [
   { to: "/#services", label: "Services" },
   { to: "/case-studies", label: "Case Studies" },
   { to: "/experience", label: "Experience" },
-  { to: "/dsa", label: "DSA" },
   ...(PRODUCT_VISUALS_ENABLED ? [{ to: "/products-visuals", label: "Products Visuals" }] : []),
   { to: "/#contact", label: "Contact" },
 ];
