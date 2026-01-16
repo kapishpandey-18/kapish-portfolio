@@ -1,7 +1,6 @@
 import { profile } from "../data/profile";
 import { Link } from "react-router-dom";
 import ArrowRightIcon from "../assets/icons/arrow-right.svg?react";
-import DownloadIcon from "../assets/icons/download.svg?react";
 
 export default function Hero() {
   return (
@@ -68,17 +67,6 @@ export default function Hero() {
             >
               Get in Touch
             </Link>
-
-            <a
-              href="/resume.pdf"
-              download="Kapish_Pandey_Resume.pdf"
-              className="px-6 py-3 rounded-lg border border-neutral-700 text-neutral-300 font-medium hover:border-purple-600 hover:text-purple-600 hover:bg-purple-600/5 transition-all duration-300"
-            >
-              <span className="flex items-center gap-2">
-                <DownloadIcon className="w-4 h-4" aria-hidden="true" />
-                Resume
-              </span>
-            </a>
           </div>
         </div>
       </div>
