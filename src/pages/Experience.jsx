@@ -240,20 +240,6 @@ export default function ExperiencePage() {
             <li>Mobile Engineer (React + Capacitor)</li>
           </ul>
         </section>
-
-        {/* Resume / Downloads */}
-        <section className="card-overlay rounded-xl p-6 md:p-8 space-y-4">
-          <h2 className="text-2xl font-semibold text-green-400">Resume</h2>
-          <div className="flex gap-3 flex-wrap">
-            <a
-              href="/resume.pdf"
-              download="Kapish_Pandey_Resume.pdf"
-              className="px-4 py-2 rounded-lg border border-blue-500/50 text-blue-400 hover:bg-blue-500/10 transition-colors"
-            >
-              Download PDF
-            </a>
-          </div>
-        </section>
       </article>
       <Contact />
     </>
